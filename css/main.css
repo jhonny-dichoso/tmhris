@@ -376,10 +376,6 @@ img.img-absolute {
 
 /* Margin */
 
-.mb--5 {
-  margin-bottom: 5px !important;
-}
-
 .mb--10 {
   margin-bottom: 10px !important;
 }
@@ -1691,6 +1687,10 @@ section {
   display: block;
   width: 100%;
   padding: 15px 0;
+}
+
+.login-wrapper form input[type="email"] {
+  margin-bottom: 5px;
 }
 
 .login-wrapper form input {
