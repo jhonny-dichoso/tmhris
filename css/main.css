@@ -332,19 +332,6 @@ p {
   font-family: montserratextrabold;
 }
 
-/* Position */
-
-.p-absolute {
-  position: absolute;
-}
-
-.p-absolute-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /* Display */
 
 .d-inline-block {
@@ -589,10 +576,6 @@ form textarea {
 
 .bg--highlight {
   box-shadow: 0px 0px 8px #b1b1b1;
-}
-
-.bg--white-no-pd {
-  background-color: #fff;
 }
 
 .bg--white {
@@ -1712,6 +1695,7 @@ section {
 
 #login {
   height: 100vh;
+  overflow-y: hidden;
 }
 
 .login-wrapper {
@@ -1727,7 +1711,6 @@ section {
 .login-wrapper span {
   width: 36px;
   height: 36px;
-  display: block;
   position: absolute;
 }
 
