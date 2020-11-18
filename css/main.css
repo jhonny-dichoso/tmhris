@@ -280,18 +280,6 @@ p {
   margin-bottom: 20px;
 }
 
-/* Font Sizes */
-
-.fs-11 {
-  font-size: 11px;
-}
-
-/* Font Family */
-
-.montserrat-bold {
-  font-family: "montserratextrabold";
-}
-
 /* Text Color */
 
 .color--darkgray {
@@ -345,10 +333,6 @@ p {
 }
 
 /* Position */
-
-.p-relative {
-  position: relative;
-}
 
 .p-absolute {
   position: absolute;
@@ -521,6 +505,7 @@ input[type="email"],
 input[type="tel"],
 input[type="number"],
 input[type="date"],
+input[type="password"],
 select,
 textarea {
   background: #fff;
@@ -552,7 +537,8 @@ form input[type="text"],
 form input[type="tel"],
 form input[type="number"],
 form input[type="date"],
-form input[type="email"] {
+form input[type="email"],
+form input[type="password"] {
   width: 100%;
 }
 
@@ -1742,6 +1728,7 @@ section {
   width: 36px;
   height: 36px;
   display: block;
+  position: absolute;
 }
 
 .login-wrapper span i {
@@ -1756,6 +1743,10 @@ section {
 
 .login-wrapper form input {
   padding-left: 44px;
+}
+
+#forgot-password {
+  font-size: 11px;
 }
 
 /* ===================================================================
