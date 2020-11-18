@@ -1697,6 +1697,11 @@ section {
   padding-left: 44px;
 }
 
+.login-wrapper form span:last-child {
+  width: unset;
+  height: unset;
+}
+
 #forgot-password {
   font-size: 11px;
   justify-content: space-between;
