@@ -1479,30 +1479,6 @@ section {
   position: relative;
 }
 
-.horizontal {
-  width: 300px;
-}
-
-.flex-direction-column {
-  flex-direction: column;
-}
-
-.tabs.flex-direction-column label {
-  margin-right: unset;
-}
-
-.tab {
-  padding: 30px;
-}
-
-#tab1 {
-  display: block;
-}
-
-#tab2 {
-  display: none;
-}
-
 .tab-home {
   position: absolute;
   width: 70%;
@@ -1871,9 +1847,6 @@ article:after {
   #banner .wrapper {
     height: auto;
   }
-  /* #banner .banner-content {
-    width: 100%;
-  } */
 
   #payment .bg--highlight {
     padding: 20px !important;
