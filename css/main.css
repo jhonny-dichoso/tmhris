@@ -408,6 +408,12 @@ img.img-absolute {
   margin: 0 !important;
 }
 
+/* Padding */
+
+.pd--30 {
+  padding: 30px;
+}
+
 button,
 input[type="submit"],
 input[type="button"],
@@ -1463,17 +1469,63 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
+
+/* Additional CSS by Vincent :) */
+
+.horizontal-tabs {
+  display: block !important;
+  flex-wrap: unset !important;
+  width: 30% !important;
+  position: relative;
+}
+
+.horizontal {
+  width: 300px;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.tabs.flex-direction-column label {
+  margin-right: unset;
+}
+
+.tab {
+  padding: 30px;
+}
+
+#tab1 {
+  display: block;
+}
+
+#tab2 {
+  display: none;
+}
+
+.tab-home {
+  position: absolute;
+  width: 70%;
+  left: 105%;
+  top: 8%;
+  display: none;
+}
+
+/* End of Additional CSS by Vincent :) */
+
 .tabs label {
   order: 1;
   display: block;
   padding: 1rem 2rem;
   margin-right: 0.2rem;
   cursor: pointer;
-  background: #3a3b36;
+  background: #777777;
   color: #fff;
   font-weight: bold;
   font-size: 14px;
   transition: background ease 0.2s;
+  border-bottom: 1px solid #fff;
+  position: relative;
 }
 .tabs .tab {
   order: 99;
@@ -1495,8 +1547,12 @@ section {
   display: block;
 }
 
-.tabs .content-box {
-  margin-bottom: 30px;
+.tabs input[type="radio"]:checked + label + .tab-home {
+  display: block;
+}
+
+.content-box {
+  margin-bottom: 30px !important;
 }
 
 @media (max-width: 45em) {
@@ -1651,11 +1707,15 @@ section {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .show {
   display: inline-block;
+}
+
+.show-block {
+  display: block !important;
 }
 
 #login {
@@ -1701,6 +1761,17 @@ section {
   font-size: 11px;
   justify-content: space-between;
   display: flex;
+}
+
+#sidebar {
+  width: 250px;
+  height: 100%;
+  background: #eeeeee;
+}
+
+#sidebar ul li {
+  list-style-type: none;
+  cursor: pointer;
 }
 
 /* ===================================================================
@@ -1760,6 +1831,7 @@ article:after {
  * 8.0 :: Mobile CSS
  * ===================================================================
  */
+
 @media (max-width: 1000px) {
   #contact .contact-bg {
     height: auto;
@@ -1784,6 +1856,9 @@ article:after {
     background: #0868b2 !important;
     color: #ffffff !important;
   }
+  .content-box {
+    margin: 0 20px 30px 20px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -1799,12 +1874,24 @@ article:after {
   /* #banner .banner-content {
     width: 100%;
   } */
+
   #payment .bg--highlight {
     padding: 20px !important;
   }
   .validate iframe {
     height: 100vh !important;
     width: 100vw !important;
+  }
+
+  .tab-home {
+    position: unset;
+    width: 100%;
+    left: unset;
+    padding: 20px;
+  }
+
+  .horizontal-tabs {
+    width: 100% !important;
   }
 }
 
