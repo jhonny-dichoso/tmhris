@@ -298,6 +298,10 @@ p {
   color: #51b6b4 !important;
 }
 
+.color--lightgray {
+  color: #777777;
+}
+
 /* Alignment */
 
 .left {
@@ -537,6 +541,10 @@ form textarea {
 .bg--darkgray {
   background: #3a3b36 !important;
   color: #fff !important;
+}
+
+.bg--green {
+  background-color: #51b6b4;
 }
 
 .bg--highlight {
@@ -1466,13 +1474,11 @@ section {
 .tabs label {
   order: 1;
   display: block;
-  padding: 1rem 2rem;
+  padding: 1rem 1.3rem;
   margin-right: 0.2rem;
   cursor: pointer;
   background: #3a3b36;
   color: #fff;
-  font-weight: bold;
-  font-size: 14px;
   transition: background ease 0.2s;
 }
 .tabs .tab {
@@ -1489,6 +1495,10 @@ section {
 .tabs input[type="radio"]:checked + label {
   background: #fff;
   color: #0868b2;
+}
+
+.tabs input[type="radio"]:checked + label > span {
+  color: #fff;
 }
 
 .tabs input[type="radio"]:checked + label + .tab {
@@ -2215,4 +2225,55 @@ article:after {
   .table-res td {
     padding-left: 55%;
   }
+}
+
+/* ===================================================================
+ * 17.0 :: CIRCULAR GRAPHS
+ * ===================================================================
+ */
+
+.circle-chart__circle {
+  animation: circle-chart-fill 2s reverse; /* 1 */
+  transform: rotate(-90deg); /* 2, 3 */
+  transform-origin: center; /* 4 */
+  color: #777777;
+}
+
+.circle-chart__info {
+  animation: circle-chart-appear 2s forwards;
+  opacity: 0;
+  transform: translateY(0.3em);
+}
+
+.circle-chart__percent {
+  font-size: 8px;
+  font-weight: bold;
+  fill: #51b6b4;
+}
+
+.circle-chart__subline {
+  font-size: 2.5px;
+  font-weight: bold;
+  fill: #777777;
+}
+
+@keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.notification-badge {
+  border-radius: 20px;
+  background: #ff6f00;
+  padding: 3px 7px;
+  margin-left: 5px;
+  font-size: 10px;
 }
