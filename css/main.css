@@ -2277,14 +2277,13 @@ article:after {
   }
 }
 
-
 /* ===================================================================
  * 17.0 :: CIRCULAR GRAPHS
  * ===================================================================
  */
 
- .circle-chart__circle {
-  animation: circle-chart-fill 2s reverse; /* 1 */ 
+.circle-chart__circle {
+  animation: circle-chart-fill 2s reverse; /* 1 */
   transform: rotate(-90deg); /* 2, 3 */
   transform-origin: center; /* 4 */
 }
@@ -2306,7 +2305,9 @@ article:after {
 }
 
 @keyframes circle-chart-fill {
-  to { stroke-dasharray: 0 100; }
+  to {
+    stroke-dasharray: 0 100;
+  }
 }
 
 @keyframes circle-chart-appear {
