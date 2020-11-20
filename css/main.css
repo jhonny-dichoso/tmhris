@@ -298,6 +298,10 @@ p {
   color: #51b6b4 !important;
 }
 
+.color--lightgray {
+  color: #777777;
+}
+
 /* Alignment */
 
 .left {
@@ -406,12 +410,6 @@ img.img-absolute {
 
 .no-mg {
   margin: 0 !important;
-}
-
-/* Padding */
-
-.pd--30 {
-  padding: 30px;
 }
 
 button,
@@ -543,6 +541,10 @@ form textarea {
 .bg--darkgray {
   background: #3a3b36 !important;
   color: #fff !important;
+}
+
+.bg--green {
+  background-color: #51b6b4;
 }
 
 .bg--highlight {
@@ -1469,44 +1471,17 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
-
-/* Additional CSS by Vincent :) */
-
-.horizontal-tabs {
-  display: block !important;
-  flex-wrap: unset !important;
-  position: relative;
-  background: #ddd;
-}
-
-.tab-content-dashboard {
-  /* position: absolute; */
-  width: 70%;
-  left: 32%;
-  /* top: 8%; */
-  display: none;
-  /* padding: 20px; */
-  /* top: 0; */
-  right: 0;
-  float: right;
-}
-
-/* End of Additional CSS by Vincent :) */
-
 .tabs label {
   order: 1;
-  display: flex;
+  display: block;
   padding: 1rem 2rem;
-  /* margin-right: 0.2rem; */
+  margin-right: 0.2rem;
   cursor: pointer;
-  background: #777777;
+  background: #3a3b36;
   color: #fff;
   font-weight: bold;
   font-size: 14px;
   transition: background ease 0.2s;
-  border-bottom: 1px solid #fff;
-  position: relative;
-  width: 30%;
 }
 .tabs .tab {
   order: 99;
@@ -1528,12 +1503,8 @@ section {
   display: block;
 }
 
-.tabs input[type="radio"]:checked + label + .tab-content-dashboard {
-  display: block;
-}
-
-.content-box {
-  margin-bottom: 30px !important;
+.tabs .content-box {
+  margin-bottom: 30px;
 }
 
 @media (max-width: 45em) {
@@ -1688,15 +1659,11 @@ section {
 }
 
 .hide {
-  display: none !important;
+  display: none;
 }
 
 .show {
   display: inline-block;
-}
-
-.show-block {
-  display: block !important;
 }
 
 #login {
@@ -1738,21 +1705,15 @@ section {
   padding-left: 44px;
 }
 
+.login-wrapper form span:last-child {
+  width: unset;
+  height: unset;
+}
+
 #forgot-password {
   font-size: 11px;
   justify-content: space-between;
   display: flex;
-}
-
-#sidebar {
-  width: 250px;
-  height: 100%;
-  background: #eeeeee;
-}
-
-#sidebar ul li {
-  list-style-type: none;
-  cursor: pointer;
 }
 
 /* ===================================================================
@@ -1812,7 +1773,6 @@ article:after {
  * 8.0 :: Mobile CSS
  * ===================================================================
  */
-
 @media (max-width: 1000px) {
   #contact .contact-bg {
     height: auto;
@@ -1837,9 +1797,6 @@ article:after {
     background: #0868b2 !important;
     color: #ffffff !important;
   }
-  .content-box {
-    margin: 0 20px 30px 20px;
-  }
 }
 
 @media (max-width: 800px) {
@@ -1852,24 +1809,15 @@ article:after {
   #banner .wrapper {
     height: auto;
   }
-
+  /* #banner .banner-content {
+    width: 100%;
+  } */
   #payment .bg--highlight {
     padding: 20px !important;
   }
   .validate iframe {
     height: 100vh !important;
     width: 100vw !important;
-  }
-
-  .tab-content-dashboard {
-    position: unset;
-    width: 100%;
-    left: unset;
-    padding: 20px;
-  }
-
-  .horizontal-tabs {
-    width: 100% !important;
   }
 }
 
@@ -2286,6 +2234,7 @@ article:after {
   animation: circle-chart-fill 2s reverse; /* 1 */
   transform: rotate(-90deg); /* 2, 3 */
   transform-origin: center; /* 4 */
+  color: #777777;
 }
 
 .circle-chart__info {
@@ -2297,11 +2246,13 @@ article:after {
 .circle-chart__percent {
   font-size: 8px;
   font-weight: bold;
+  fill: #51b6b4;
 }
 
 .circle-chart__subline {
   font-size: 2.5px;
   font-weight: bold;
+  fill: #777777;
 }
 
 @keyframes circle-chart-fill {
