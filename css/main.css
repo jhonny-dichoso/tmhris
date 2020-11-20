@@ -1475,16 +1475,17 @@ section {
 .horizontal-tabs {
   display: block !important;
   flex-wrap: unset !important;
-  width: 30% !important;
   position: relative;
 }
 
-.tab-home {
+.tab-content-dashboard {
   position: absolute;
-  width: 70%;
-  left: 105%;
+  width: 68%;
+  left: 32%;
   top: 8%;
   display: none;
+  padding: 20px;
+  top: 0;
 }
 
 /* End of Additional CSS by Vincent :) */
@@ -1502,6 +1503,7 @@ section {
   transition: background ease 0.2s;
   border-bottom: 1px solid #fff;
   position: relative;
+  width: 30%;
 }
 .tabs .tab {
   order: 99;
@@ -1523,7 +1525,7 @@ section {
   display: block;
 }
 
-.tabs input[type="radio"]:checked + label + .tab-home {
+.tabs input[type="radio"]:checked + label + .tab-content-dashboard {
   display: block;
 }
 
@@ -1856,7 +1858,7 @@ article:after {
     width: 100vw !important;
   }
 
-  .tab-home {
+  .tab-content-dashboard {
     position: unset;
     width: 100%;
     left: unset;
