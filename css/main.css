@@ -1476,25 +1476,28 @@ section {
   display: block !important;
   flex-wrap: unset !important;
   position: relative;
+  background: #ddd;
 }
 
 .tab-content-dashboard {
-  position: absolute;
-  width: 68%;
+  /* position: absolute; */
+  width: 70%;
   left: 32%;
-  top: 8%;
+  /* top: 8%; */
   display: none;
-  padding: 20px;
-  top: 0;
+  /* padding: 20px; */
+  /* top: 0; */
+  right: 0;
+  float: right;
 }
 
 /* End of Additional CSS by Vincent :) */
 
 .tabs label {
   order: 1;
-  display: block;
+  display: inline-block;
   padding: 1rem 2rem;
-  margin-right: 0.2rem;
+  /* margin-right: 0.2rem; */
   cursor: pointer;
   background: #777777;
   color: #fff;
