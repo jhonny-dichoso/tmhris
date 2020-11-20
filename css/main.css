@@ -2277,3 +2277,42 @@ article:after {
   margin-left: 5px;
   font-size: 10px;
 }
+
+.request-form {
+  margin: 60px auto;
+  width: 600px;
+  display: none;
+}
+
+.request-form form {
+  margin: 60px 0;
+}
+
+.request-form label {
+  background-color: unset;
+  color: #000;
+  padding: unset;
+  margin-right: unset;
+  cursor: none;
+}
+
+.request-form input {
+  width: 200px;
+}
+
+.request-form-wrapper input {
+  width: 300px !important;
+}
+
+/* .request-form a {
+  width: 100%;
+  margin: 0 20px;
+} */
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.space-between {
+  justify-content: space-between;
+}
