@@ -1474,13 +1474,11 @@ section {
 .tabs label {
   order: 1;
   display: block;
-  padding: 1rem 2rem;
+  padding: 1rem 1.3rem;
   margin-right: 0.2rem;
   cursor: pointer;
   background: #3a3b36;
   color: #fff;
-  font-weight: bold;
-  font-size: 14px;
   transition: background ease 0.2s;
 }
 .tabs .tab {
@@ -1497,6 +1495,10 @@ section {
 .tabs input[type="radio"]:checked + label {
   background: #fff;
   color: #0868b2;
+}
+
+.tabs input[type="radio"]:checked + label > span {
+  color: #fff;
 }
 
 .tabs input[type="radio"]:checked + label + .tab {
@@ -2268,9 +2270,10 @@ article:after {
   }
 }
 
-.notification {
+.notification-badge {
   border-radius: 20px;
   background: #ff6f00;
   padding: 3px 7px;
   margin-left: 5px;
+  font-size: 10px;
 }
