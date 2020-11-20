@@ -2267,3 +2267,10 @@ article:after {
     transform: translateY(0);
   }
 }
+
+.notification {
+  border-radius: 20px;
+  background: #ff6f00;
+  padding: 3px 7px;
+  margin-left: 5px;
+}
