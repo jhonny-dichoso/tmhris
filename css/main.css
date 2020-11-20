@@ -2218,3 +2218,7 @@ article:after {
 }
 
 /* --Roy's add-- */
+
+.input-pd-icon-none {
+  padding-left: 10px!important;
+}
