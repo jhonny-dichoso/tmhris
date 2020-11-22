@@ -2234,13 +2234,13 @@ article:after {
 }
 
 .date {
-  font-size: 40px;
+  font-size: 32px;
   color: #fff;
   font-weight: bolder;
-  padding: 5px;
   margin-bottom: 10px;
   padding-bottom: 11px;
   border-bottom: 1px solid #dcdcdc;
+  text-align: center;
 }
 
 .month {
@@ -2252,7 +2252,7 @@ article:after {
 
 .cal-info {
   background: #eeeeee;
-  padding: 20px;
+  padding: 19px;
 }
 
 .border-none {
