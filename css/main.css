@@ -2227,6 +2227,7 @@ article:after {
   }
 }
 
+<<<<<<< HEAD
 /* ===================================================================
  * 17.0 :: CIRCULAR GRAPHS
  * ===================================================================
@@ -2276,4 +2277,55 @@ article:after {
   padding: 3px 7px;
   margin-left: 5px;
   font-size: 10px;
+=======
+/* --Roy's add-- */
+
+.input-pd-icon-none {
+  padding-left: 10px !important;
+}
+
+.month-head {
+  margin-left: 20px;
+}
+
+.cal-box {
+  /* align-self: flex-start; */
+  width: 25%;
+  padding: 19px 5px;
+}
+
+.date {
+  font-size: 32px;
+  color: #fff;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #dcdcdc;
+  text-align: center;
+}
+
+.month {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.cal-info {
+  background: #eeeeee;
+  padding: 19px;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.mt--30 {
+  margin-top: 30px;
+}
+
+.cal-bg-gray {
+  background: #f6f6f6;
+  padding: 30px 0;
+>>>>>>> e44232ffb47fc0b7d2e72ce824a83ec2669a0596
 }
