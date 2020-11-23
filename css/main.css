@@ -1211,7 +1211,7 @@ header nav ul li a:hover {
 .user {
   color: #fff;
   z-index: 1;
-  padding: 3px 10px;
+  /* padding: 3px 10px; */
   font-weight: 700;
 }
 
@@ -1224,7 +1224,7 @@ header nav ul li a:hover {
   display: inline-flex;
   align-items: center;
   margin: 5px;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 #directory .user ul li {
@@ -1240,7 +1240,7 @@ header nav ul li a:hover {
   border-radius: 100px;
   width: 80px;
   height: 80px;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 
 @keyframes fade {
@@ -1308,7 +1308,7 @@ header nav ul li a:hover {
   }
 
   #banner {
-    padding: 5vh 0 5vh !important;
+    padding: 3vh 0 3vh !important;
   }
 
   @-webkit-keyframes Gradient {
@@ -1899,10 +1899,20 @@ article:after {
 }
 
 @media (max-width: 480px) {
-  .banner-content .user ul li {
+  .banner-title {
+    font-size: 18px;
+  }
+  .banner-date h3 {
+    font-size: 16px;
+  }
+
+  .user-dp {
+    margin: 0;
+  }
+  /* .banner-content .user ul li {
     height: unset;
-    display: block;
-    margin: none;
+    margin: 0 !important;
+    vertical-align: middle;
   }
   .banner-content,
   .banner-date {
@@ -1911,7 +1921,7 @@ article:after {
   }
   .banner-wrapper {
     display: block;
-  }
+  } */
 
   .tab-content .card-details {
     display: block;
@@ -1925,6 +1935,21 @@ article:after {
 }
 
 @media (max-width: 429px) {
+  /* .banner-wrapper,
+  .banner-content {
+    display: block;
+    text-align: center;
+  } */
+  .user-dp img {
+    width: 50px;
+    height: 50px;
+  }
+  .banner-title {
+    font-size: 16px;
+  }
+  .banner-date h3 {
+    font-size: 14px;
+  }
   #forgot-password {
     display: block;
     text-align: center;
