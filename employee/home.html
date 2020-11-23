@@ -36,8 +36,8 @@
 
     <section id="banner" class="bg--blue">
       <div class="container">
-        <div class="row-height">
-          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <div class="row">
+          <div class="banner-wrapper flex space-between">
             <div class="banner-content">
               <div class="user">
                 <ul>
@@ -57,16 +57,12 @@
                 </ul>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <div class="center-vertically">
-              <div class="banner-date">
-                <h3>
-                  <script>
-                    document.write(new Date().toDateString());
-                  </script>
-                </h3>
-              </div>
+            <div class="banner-date">
+              <h3>
+                <script>
+                  document.write(new Date().toDateString());
+                </script>
+              </h3>
             </div>
           </div>
         </div>
@@ -83,124 +79,175 @@
                 <label for="tabone">MY TIME OFF </label>
                 <div class="tab">
                   <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                      <div class="t-center color--blue mb--30">
-                        <svg
-                          class="circle-chart mb--10"
-                          viewbox="0 0 33.83098862 33.83098862"
-                          width="180"
-                          height="180"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle
-                            class="circle-chart__background"
-                            stroke="#ddd"
-                            stroke-width="2"
-                            fill="none"
-                            cx="16.91549431"
-                            cy="16.91549431"
-                            r="15.91549431"
-                          />
-                          <circle
-                            class="circle-chart__circle"
-                            stroke="#51B6B4"
-                            stroke-width="2"
-                            stroke-dasharray="50,100"
-                            stroke-linecap="square"
-                            fill="none"
-                            cx="16.91549431"
-                            cy="16.91549431"
-                            r="15.91549431"
-                          />
-                          <g class="circle-chart__info">
-                            <text
-                              class="circle-chart__percent"
-                              x="16.91549431"
-                              y="15.5"
-                              alignment-baseline="central"
-                              text-anchor="middle"
-                            >
-                              130.00
-                            </text>
-                            <text
-                              class="circle-chart__subline"
-                              x="16.91549431"
-                              y="20.5"
-                              alignment-baseline="central"
-                              text-anchor="middle"
-                            >
-                              Paid Time Off
-                            </text>
-                          </g>
-                        </svg>
-                        <div class="color--lightgray">
-                          <p class="no-mg">Hours Used (YTD</p>
-                          <p class="no-mg">0.0 Hours Scheduled</p>
+                    <div class="circle-chart-wrapper">
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="t-center color--blue mb--30">
+                          <svg
+                            class="circle-chart mb--10"
+                            viewbox="0 0 33.83098862 33.83098862"
+                            width="180"
+                            height="180"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              class="circle-chart__background"
+                              stroke="#ddd"
+                              stroke-width="2"
+                              fill="none"
+                              cx="16.91549431"
+                              cy="16.91549431"
+                              r="15.91549431"
+                            />
+                            <circle
+                              class="circle-chart__circle"
+                              stroke="#51B6B4"
+                              stroke-width="2"
+                              stroke-dasharray="50,100"
+                              stroke-linecap="square"
+                              fill="none"
+                              cx="16.91549431"
+                              cy="16.91549431"
+                              r="15.91549431"
+                            />
+                            <g class="circle-chart__info">
+                              <text
+                                class="circle-chart__percent"
+                                x="16.91549431"
+                                y="15.5"
+                                alignment-baseline="central"
+                                text-anchor="middle"
+                              >
+                                130.00
+                              </text>
+                              <text
+                                class="circle-chart__subline"
+                                x="16.91549431"
+                                y="20.5"
+                                alignment-baseline="central"
+                                text-anchor="middle"
+                              >
+                                Paid Time Off
+                              </text>
+                            </g>
+                          </svg>
+                          <div class="color--lightgray">
+                            <p class="no-mg">Hours Used (YTD</p>
+                            <p class="no-mg">0.0 Hours Scheduled</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                      <div class="t-center color--blue">
-                        <svg
-                          class="circle-chart"
-                          viewbox="0 0 33.83098862 33.83098862"
-                          width="180"
-                          height="180"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle
-                            class="circle-chart__background"
-                            stroke="#ddd"
-                            stroke-width="2"
-                            fill="none"
-                            cx="16.91549431"
-                            cy="16.91549431"
-                            r="15.91549431"
-                          />
-                          <circle
-                            class="circle-chart__circle"
-                            stroke="#51B6B4"
-                            stroke-width="2"
-                            stroke-dasharray="100,100"
-                            stroke-linecap="square"
-                            fill="none"
-                            cx="16.91549431"
-                            cy="16.91549431"
-                            r="15.91549431"
-                          />
-                          <g class="circle-chart__info">
-                            <text
-                              class="circle-chart__percent"
-                              x="16.91549431"
-                              y="15.5"
-                              alignment-baseline="central"
-                              text-anchor="middle"
-                            >
-                              0.0
-                            </text>
-                            <text
-                              class="circle-chart__subline"
-                              x="16.91549431"
-                              y="20.5"
-                              alignment-baseline="central"
-                              text-anchor="middle"
-                            >
-                              Paid Sick Off
-                            </text>
-                          </g>
-                        </svg>
-                        <div class="color--lightgray">
-                          <p class="no-mg">Hours Used (YTD</p>
-                          <p class="no-mg">0.0 Hours Scheduled</p>
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="t-center color--blue">
+                          <svg
+                            class="circle-chart"
+                            viewbox="0 0 33.83098862 33.83098862"
+                            width="180"
+                            height="180"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              class="circle-chart__background"
+                              stroke="#ddd"
+                              stroke-width="2"
+                              fill="none"
+                              cx="16.91549431"
+                              cy="16.91549431"
+                              r="15.91549431"
+                            />
+                            <circle
+                              class="circle-chart__circle"
+                              stroke="#51B6B4"
+                              stroke-width="2"
+                              stroke-dasharray="100,100"
+                              stroke-linecap="square"
+                              fill="none"
+                              cx="16.91549431"
+                              cy="16.91549431"
+                              r="15.91549431"
+                            />
+                            <g class="circle-chart__info">
+                              <text
+                                class="circle-chart__percent"
+                                x="16.91549431"
+                                y="15.5"
+                                alignment-baseline="central"
+                                text-anchor="middle"
+                              >
+                                0.0
+                              </text>
+                              <text
+                                class="circle-chart__subline"
+                                x="16.91549431"
+                                y="20.5"
+                                alignment-baseline="central"
+                                text-anchor="middle"
+                              >
+                                Paid Sick Off
+                              </text>
+                            </g>
+                          </svg>
+                          <div class="color--lightgray">
+                            <p class="no-mg">Hours Used (YTD</p>
+                            <p class="no-mg">0.0 Hours Scheduled</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <a class="btn--blue bg--green">REQUEST TIME OFF</a>
+                    <a
+                      href="#request-form"
+                      id="btnRequestTimeOff"
+                      class="btn--blue bg--green"
+                      >REQUEST TIME OFF</a
+                    >
+                  </div>
+                  <div id="request-form" class="request-form">
+                    <div class="row">
+                      <hr />
+                      <form action="">
+                        <div class="request-form-wrapper mb--30">
+                          <label for="start-date">Start Date</label>
+                          <input type="date" />
+                        </div>
+                        <div class="request-form-wrapper mb--30">
+                          <label for="returning-date">Returning Date</label>
+                          <input type="date" />
+                        </div>
+                        <div class="request-form-wrapper mb--30">
+                          <label for="start-date">Day(s)</label>
+                          <select name="" id="">
+                            <option value="-">-</option>
+                            <option value="Sample">Sample</option>
+                          </select>
+                        </div>
+                        <div class="request-form-wrapper mb--30">
+                          <label for="returning-date">Type of Leave</label>
+                          <select name="" id="">
+                            <option value="-">-</option>
+                            <option value="Sample">Sample</option>
+                          </select>
+                        </div>
+                        <label for="description">Description</label>
+                        <textarea
+                          class="mb--30"
+                          name=""
+                          id=""
+                          cols="30"
+                          rows="10"
+                        ></textarea>
+                        <div class="request-form-wrapper mb--30">
+                          <a class="btn--blue bg--green no-mg"
+                            >APPLY TIME OFF</a
+                          >
+                          <a id="btnCancel" class="btn--blue bg--green no-mg"
+                            >CANCEL</a
+                          >
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
-
                 <input type="radio" name="tabs" id="tabtwo" />
                 <label for="tabtwo"
                   >EMPLOYEES TIME OFF
@@ -249,7 +296,6 @@
                     >
                   </div>
                 </div>
-
                 <input type="radio" name="tabs" id="tabthree" />
                 <label for="tabthree"
                   >EVENTS <span class="notification-badge">123</span></label
@@ -293,7 +339,6 @@
                     <button class="btn--blue bg--green">VIEW MORE</button>
                   </div>
                 </div>
-
                 <input type="radio" name="tabs" id="tabfour" />
                 <label for="tabfour"
                   >ANNOUNCEMENTS
@@ -419,5 +464,18 @@
       <a href="#top"><img src="../img/caret-up-solid.svg" alt="" /></a>
     </div>
     <script src="../js/custom.js"></script>
+    <script>
+      const btnRequestTimeOff = document.querySelector("#btnRequestTimeOff"),
+        btnCancel = document.querySelector("#btnCancel"),
+        formRequestForm = document.querySelector(".request-form");
+
+      btnRequestTimeOff.addEventListener("click", () => {
+        formRequestForm.classList.add("show-block");
+      });
+
+      btnCancel.addEventListener("click", () => {
+        formRequestForm.classList.remove("show-block");
+      });
+    </script>
   </body>
 </html>

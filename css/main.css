@@ -446,7 +446,8 @@ input[type="color"] {
 
 button,
 input,
-textarea {
+textarea,
+select {
   font-family: inherit;
 }
 
@@ -1165,11 +1166,9 @@ header nav ul li a:hover {
  * ===================================================================
  */
 
-/* #banner .banner-content {
-   top: 0;
-   bottom: 0;
-   margin: auto;
- } */
+.banner-content {
+  display: inline-block;
+}
 
 .banner-title {
   font-size: 30px;
@@ -1177,7 +1176,7 @@ header nav ul li a:hover {
 }
 
 .banner-date {
-  text-align: right;
+  display: inline-block;
 }
 
 #banner .center-vertically {
@@ -1212,7 +1211,7 @@ header nav ul li a:hover {
 .user {
   color: #fff;
   z-index: 1;
-  padding: 3px 10px;
+  /* padding: 3px 10px; */
   font-weight: 700;
 }
 
@@ -1225,7 +1224,7 @@ header nav ul li a:hover {
   display: inline-flex;
   align-items: center;
   margin: 5px;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 #directory .user ul li {
@@ -1241,7 +1240,7 @@ header nav ul li a:hover {
   border-radius: 100px;
   width: 80px;
   height: 80px;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 
 @keyframes fade {
@@ -1297,17 +1296,6 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 1000px) {
-  .banner-content {
-    text-align: center;
-    /* width: 75%;
-       height: auto;
-       margin: auto; */
-  }
-
-  .banner-date {
-    text-align: center;
-    padding-left: 80px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1320,12 +1308,7 @@ header nav ul li a:hover {
   }
 
   #banner {
-    padding: 5vh 0 5vh !important;
-  }
-  .banner-content {
-    position: relative;
-    text-align: center;
-    /* width: 95%; */
+    padding: 3vh 0 3vh !important;
   }
 
   @-webkit-keyframes Gradient {
@@ -1357,9 +1340,6 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 400px) {
-  .banner-content {
-    height: auto;
-  }
   .banner-title {
     font-size: 30px;
     line-height: 30px;
@@ -1665,7 +1645,11 @@ section {
 }
 
 .show {
-  display: inline-block;
+  display: inline-block !important;
+}
+
+.show-block {
+  display: block !important;
 }
 
 #login {
@@ -1716,6 +1700,79 @@ section {
   font-size: 11px;
   justify-content: space-between;
   display: flex;
+}
+
+/* Vincent's Additional CSS */
+.notification-badge {
+  border-radius: 20px;
+  background: #ff6f00;
+  padding: 3px 7px;
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.circle-chart-wrapper {
+  margin-top: 60px;
+}
+
+.request-form {
+  margin: 60px auto;
+  width: 600px;
+  display: none;
+}
+
+.request-form form {
+  margin: 60px 0;
+}
+
+.request-form label {
+  background-color: unset;
+  color: #000;
+  padding: unset;
+  margin-right: unset;
+  cursor: none;
+}
+
+.request-form-wrapper {
+  display: inline-block;
+}
+
+.request-form form div {
+  width: 300px;
+}
+
+.request-form-wrapper a {
+  display: inline-block;
+  width: 300px;
+}
+
+.request-form-wrapper a:first-child {
+  float: left;
+}
+
+.request-form-wrapper a:last-child {
+  float: right;
+}
+
+.request-form form div:nth-child(odd) {
+  float: left;
+}
+
+.request-form form div:nth-child(even) {
+  float: right;
+}
+
+.request-form form div:last-child {
+  float: none;
+  width: 100%;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 /* ===================================================================
@@ -1799,6 +1856,9 @@ article:after {
     background: #0868b2 !important;
     color: #ffffff !important;
   }
+  .banner-wrapper {
+    justify-content: space-evenly !important;
+  }
 }
 
 @media (max-width: 800px) {
@@ -1808,12 +1868,27 @@ article:after {
 }
 
 @media (max-width: 768px) {
+  .request-form-wrapper a {
+    display: block !important;
+    margin-bottom: 30px !important;
+    width: 100% !important;
+  }
+  .request-form-wrapper div {
+    float: none !important;
+  }
+  .request-form-wrapper {
+    display: block !important;
+  }
+  .request-form form div {
+    width: 100% !important;
+  }
+  .request-form {
+    width: 100% !important;
+  }
   #banner .wrapper {
     height: auto;
   }
-  /* #banner .banner-content {
-    width: 100%;
-  } */
+
   #payment .bg--highlight {
     padding: 20px !important;
   }
@@ -1824,6 +1899,30 @@ article:after {
 }
 
 @media (max-width: 480px) {
+  .banner-title {
+    font-size: 18px;
+  }
+  .banner-date h3 {
+    font-size: 16px;
+  }
+
+  .user-dp {
+    margin: 0;
+  }
+  /* .banner-content .user ul li {
+    height: unset;
+    margin: 0 !important;
+    vertical-align: middle;
+  }
+  .banner-content,
+  .banner-date {
+    text-align: center;
+    display: block;
+  }
+  .banner-wrapper {
+    display: block;
+  } */
+
   .tab-content .card-details {
     display: block;
   }
@@ -1836,6 +1935,21 @@ article:after {
 }
 
 @media (max-width: 429px) {
+  /* .banner-wrapper,
+  .banner-content {
+    display: block;
+    text-align: center;
+  } */
+  .user-dp img {
+    width: 50px;
+    height: 50px;
+  }
+  .banner-title {
+    font-size: 16px;
+  }
+  .banner-date h3 {
+    font-size: 14px;
+  }
   #forgot-password {
     display: block;
     text-align: center;
@@ -2278,6 +2392,7 @@ article:after {
   }
 }
 
+
 .notification-badge {
   border-radius: 20px;
   background: #ff6f00;
@@ -2352,3 +2467,4 @@ article:after {
 .calendar-wrapper .calendar-wrap:nth-child(odd) {
   margin: 0 20px;
 }
+
