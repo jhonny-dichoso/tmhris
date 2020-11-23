@@ -2341,6 +2341,7 @@ article:after {
 
 .calendar-wrapper {
   background-color: #fff;
+  margin: 0 8fpx;
 }
 
 .calendar-wrap {
@@ -2349,6 +2350,7 @@ article:after {
 
 .calendar-wrapper .calendar-wrap:nth-child(even) {
   background-color: #f8f9fb;
+  margin: 0 20px;
 }
 
 .calendar-wrapper .calendar-wrap:nth-child(odd) {
