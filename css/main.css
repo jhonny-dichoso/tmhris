@@ -2263,7 +2263,10 @@ article:after {
   margin-top: 30px;
 }
 
-.cal-bg-gray {
-  background: #f6f6f6;
-  padding: 30px 0;
+.pd-y-20 {
+  padding: 0 20px;
+}
+
+.cal-bg:nth-child(even) {
+  background: #f8f9fb !important;
 }
