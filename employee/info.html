@@ -1,571 +1,645 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width">
-	<title>Two Miles HRIS</title>
-	<link rel="stylesheet" type="text/css" href="../css/main.css">	
-	<link rel="stylesheet" href="../css/animate.css">	
-	<link rel="icon" type="image/png" href="../img/favicon.ico">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Two Miles HRIS</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.ico" />
     <script src="../js/wow.min.js"></script>
     <script>
-        new WOW().init();
+      new WOW().init();
     </script>
-</head>
+  </head>
 
-<body id="top">
+  <body id="top">
     <header>
-        <div class="container no-pd">
-			<div class="logo"><img src="../img/logo-tm.png" id="logo"></div>
-			<nav>
-				<ul>
-					<li><a href="home.html">HOME</a></li>
-					<li><a href="info.html" class="active">INFO</a></li>
-					<li><a href="directory.html">DIRECTORY</a></li>
-					<li><a href="file.html">FILES</a></li>
-					<li><a href="request.html">REQUEST</a></li>
-					<li><a href="#">LOGOUT</a></li>
-				</ul>
-			</nav>
-			<div class="menu-toggle">
-				<div id="nav-icon3">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				  </div>
-			</div>
+      <div class="container no-pd">
+        <div class="logo"><img src="../img/logo-tm.png" id="logo" /></div>
+        <nav>
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="info.html" class="active">INFO</a></li>
+            <li><a href="directory.html">DIRECTORY</a></li>
+            <li><a href="file.html">FILES</a></li>
+            <li><a href="request.html">REQUEST</a></li>
+            <li><a href="#">LOGOUT</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <div id="nav-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
+      </div>
     </header>
 
-	<section id="banner" class="bg--blue">	
-		<div class="container">
-			<div class="row-height">
-				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-					<div class="banner-content">
-						<div class="user">
-							<ul>
-								<li>
-									<div class="user-dp">
-										<img src="https://ems.frontlinebusiness.com.ph/rest/uploads/images/5e2a2d314af277.33874211.jpg" alt="jhonny user photo">
-									</div>
-								</li>			
-								<li>
-									<h2 class="banner-title">Hello <span class="t-exbold">Jhonny!</span></h2>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-					<div class="center-vertically">
-						<div class="banner-date ">
-							<h3><script>document.write(new Date().toDateString());</script></h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section id="banner" class="bg--blue">
+      <div class="container">
+        <div class="row-height">
+          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <div class="banner-content">
+              <div class="user">
+                <ul>
+                  <li>
+                    <div class="user-dp">
+                      <img
+                        src="https://ems.frontlinebusiness.com.ph/rest/uploads/images/5e2a2d314af277.33874211.jpg"
+                        alt="jhonny user photo"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <h2 class="banner-title">
+                      Hello <span class="t-exbold">Jhonny!</span>
+                    </h2>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="center-vertically">
+              <div class="banner-date">
+                <h3>
+                  <script>
+                    document.write(new Date().toDateString());
+                  </script>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<section class="bg--lightgray">
-		<div class="container">		
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="content-box bg--highlight mb--20">
-							<div class="tabs">
-								<input type="radio" name="tabs" id="tabone" checked="checked">
-								<label for="tabone">Personal</label>
-								<div class="tab">
-									<form action="">
-										<h4 class="title-box-light mb--20"><strong> Basic Information</strong></h4>
-										<div class="row">
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">First Name</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Middle Name</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Last Name</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Preferred Name</span>
-													<input type="text" class="error-show">
-													<span class="error-msg error-show">Required field</span>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Birth Date</span>
-													<input type="date" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">SSN</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Gender</span>
-													<select name="" id="" disabled>
-														<option value="">Male</option>
-														<option value="">Female</option>
-													</select>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Marital Status</span>
-													<select name="" id="" class="error-show">
-														<option value="">Single</option>
-														<option value="">Married</option>
-														<option value="">Common Law</option>
-														<option value="">Domestic Partnership</option>
-													</select>
-													<span class="error-msg error-show">Required field</span>
-												</div>
-											</div>
-										</div>
-										
-										<h4 class="title-box-light mb--20"><strong> Address</strong></h4>
+    <section class="bg--lightgray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="content-box bg--highlight mb--20">
+              <div class="tabs">
+                <input type="radio" name="tabs" id="tabone" checked="checked" />
+                <label for="tabone">Personal</label>
+                <div class="tab">
+                  <form action="">
+                    <h4 class="title-box-light mb--20">
+                      <strong> Basic Information</strong>
+                    </h4>
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">First Name</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Middle Name</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Last Name</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Preferred Name</span>
+                          <input type="text" class="error-show" />
+                          <span class="error-msg error-show"
+                            >Required field</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Birth Date</span>
+                          <input type="date" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">SSN</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Gender</span>
+                          <select name="" id="" disabled>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Marital Status</span>
+                          <select name="" id="" class="error-show">
+                            <option value="">Single</option>
+                            <option value="">Married</option>
+                            <option value="">Common Law</option>
+                            <option value="">Domestic Partnership</option>
+                          </select>
+                          <span class="error-msg error-show"
+                            >Required field</span
+                          >
+                        </div>
+                      </div>
+                    </div>
 
-										<div class="row">
-											<div class="col-lg-6 col-md-6 col-sm-12">
-												<div class="content-box">
-													<span for="">Street</span>
-													<input type="text" class="error-show">
-													<span class="error-msg error-show">Required field</span>
-												</div>
-											</div>
-											<div class="col-lg-6 col-md-6 col-sm-12">
-												<div class="content-box">
-													<span for="">City</span>
-													<input type="text" class="error-show">
-													<span class="error-msg error-show">Required field</span>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-4 col-md-4 col-sm-12">
-												<div class="content-box">
-													<span for="">State</span>
-													<select name="" id="" class="error-show">
-														<option value="">AK</option>
-														<option value="">AL</option>
-														<option value="">AR</option>
-													</select>
-													<span class="error-msg error-show">Required field</span>
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4 col-sm-12">
-												<div class="content-box">
-													<span for="">Zip</span>
-													<input type="text" class="error-show">
-													<span class="error-msg error-show">Required field</span>
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4 col-sm-12">
-												<div class="content-box">
-													<span for="">Country</span>
-													<select name="" id="" class="error-show">
-														<option value="">United States</option>
-														<option value="">Japan</option>
-														<option value="">Philippines</option>
-													</select>	
-													<span class="error-msg error-show">Required field</span>
-												</div>
-											</div>
-										</div>
+                    <h4 class="title-box-light mb--20">
+                      <strong> Address</strong>
+                    </h4>
 
-										<h4 class="title-box-light mb--20"><strong> Contact</strong></h4>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Street</span>
+                          <input type="text" class="error-show" />
+                          <span class="error-msg error-show"
+                            >Required field</span
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="content-box">
+                          <span for="">City</span>
+                          <input type="text" class="error-show" />
+                          <span class="error-msg error-show"
+                            >Required field</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-box">
+                          <span for="">State</span>
+                          <select name="" id="" class="error-show">
+                            <option value="">AK</option>
+                            <option value="">AL</option>
+                            <option value="">AR</option>
+                          </select>
+                          <span class="error-msg error-show"
+                            >Required field</span
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Zip</span>
+                          <input type="text" class="error-show" />
+                          <span class="error-msg error-show"
+                            >Required field</span
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Country</span>
+                          <select name="" id="" class="error-show">
+                            <option value="">United States</option>
+                            <option value="">Japan</option>
+                            <option value="">Philippines</option>
+                          </select>
+                          <span class="error-msg error-show"
+                            >Required field</span
+                          >
+                        </div>
+                      </div>
+                    </div>
 
-										<div class="row">
-											<div class="col-lg-4 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Work Phone</span>
-													<input type="tel" disabled>
-												</div>
-											</div>
-											<div class="col-lg-2 col-md-2 col-sm-12">
-												<div class="content-box">
-													<span for="">Ext</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Mobile Phone</span>
-													<input type="tel" class="error-show">
-													<span class="error-msg error-show">Required field</span>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Home Phone</span>
-													<input type="tel" class="error-show">
-													<span class="error-msg error-show">Required field</span>
-												</div>
-											</div>
-										</div>
+                    <h4 class="title-box-light mb--20">
+                      <strong> Contact</strong>
+                    </h4>
 
-										<h4 class="title-box-light mb--20"><strong> Email</strong></h4>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Work Phone</span>
+                          <input type="tel" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-2 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Ext</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Mobile Phone</span>
+                          <input type="tel" class="error-show" />
+                          <span class="error-msg error-show"
+                            >Required field</span
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Home Phone</span>
+                          <input type="tel" class="error-show" />
+                          <span class="error-msg error-show"
+                            >Required field</span
+                          >
+                        </div>
+                      </div>
+                    </div>
 
-										<div class="row">
-											<div class="col-lg-4 col-md-4 col-sm-12">
-												<div class="content-box">
-													<span for="">Work Email</span>
-													<input type="email" disabled>
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4 col-sm-12">
-												<div class="content-box">
-													<span for="">Home Email</span>
-													<input type="email" class="error-show">
-													<span class="error-msg error-show">Required field</span>
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4 col-sm-12">
-												<div class="content-box">
-													
-												</div>
-											</div>
-										</div>
+                    <h4 class="title-box-light mb--20">
+                      <strong> Email</strong>
+                    </h4>
 
-										<h4 class="title-box-light mb--20"><strong> Social Links</strong></h4>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Work Email</span>
+                          <input type="email" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Home Email</span>
+                          <input type="email" class="error-show" />
+                          <span class="error-msg error-show"
+                            >Required field</span
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-box"></div>
+                      </div>
+                    </div>
 
-										<div class="row">
-											<div class="col-lg-4 col-md-4 col-sm-12">
-												<div class="content-box">
-													<span for="">Linked In</span>
-													<input type="text">
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4 col-sm-12">
-												<div class="content-box">
-													<span for="">Twitter</span>
-													<input type="text">
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4 col-sm-12">
-												<div class="content-box">
-													<span for="">Facebook</span>
-													<input type="text">
-												</div>
-											</div>
-										</div>
+                    <h4 class="title-box-light mb--20">
+                      <strong> Social Links</strong>
+                    </h4>
 
-										<h4 class="title-box-light mb--20"><strong> Education</strong></h4>
-										
-										<div class="tab-accordion">
-											<input id="tab-one" class="tab-trigger" type="checkbox" name="tabs">
-											<label for="tab-one" class="tab-label">Under Graduate</label>
-											<div class="tab-content">
-												<div class="content-box clearfix">
-													<div class="row">
-														<div class="col-lg-4 col-md-3 col-sm-12">
-															<div class="content-box">
-																<span for="">Institution</span>
-																<input type="text">
-															</div>
-														</div>
-														<div class="col-lg-3 col-md-3 col-sm-12">
-															<div class="content-box">
-																<span for="">Degree</span>
-																<input type="text">
-															</div>
-														</div>
-														<div class="col-lg-3 col-md-3 col-sm-12">
-															<div class="content-box">
-																<span for="">Major</span>
-																<input type="text">
-															</div>
-														</div>
-														<div class="col-lg-2 col-md-2 col-sm-12">
-															<div class="content-box">
-																<span for="">GPA</span>
-																<input type="text">
-															</div>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-lg-3 col-md-3 col-sm-12">
-															<div class="content-box">
-																<span for="">Start Date</span>
-																<input type="text">
-															</div>
-														</div>
-														<div class="col-lg-3 col-md-3 col-sm-12">
-															<div class="content-box">
-																<span for="">End Date</span>
-																<input type="text">
-															</div>
-														</div>
-														<div class="col-lg-6 col-md-6 col-sm-12">
-															<div class="content-box">
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Linked In</span>
+                          <input type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Twitter</span>
+                          <input type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Facebook</span>
+                          <input type="text" />
+                        </div>
+                      </div>
+                    </div>
 
-										<div class="tab-accordion">
-											<input id="tab-two" class="tab-trigger" type="checkbox" name="tabs">
-											<label for="tab-two" class="tab-label">Graduate Studies</label>
-											<div class="tab-content">
-												<div class="row">
-													<div class="col-lg-4 col-md-3 col-sm-12">
-														<div class="content-box">
-															<span for="">Institution</span>
-															<input type="text">
-														</div>
-													</div>
-													<div class="col-lg-3 col-md-3 col-sm-12">
-														<div class="content-box">
-															<span for="">Degree</span>
-															<input type="text">
-														</div>
-													</div>
-													<div class="col-lg-3 col-md-3 col-sm-12">
-														<div class="content-box">
-															<span for="">Major</span>
-															<input type="text">
-														</div>
-													</div>
-													<div class="col-lg-2 col-md-2 col-sm-12">
-														<div class="content-box">
-															<span for="">GPA</span>
-															<input type="text">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-lg-3 col-md-3 col-sm-12">
-														<div class="content-box">
-															<span for="">Start Date</span>
-															<input type="text">
-														</div>
-													</div>
-													<div class="col-lg-3 col-md-3 col-sm-12">
-														<div class="content-box">
-															<span for="">End Date</span>
-															<input type="text">
-														</div>
-													</div>
-													<div class="col-lg-6 col-md-6 col-sm-12">
-														<div class="content-box">
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										
-										<div class="tab-accordion">
-											<input id="tab-three" class="tab-trigger" type="checkbox" name="tabs">
-											<label for="tab-three" class="tab-label">Post Graduate</label>
-											<div class="tab-content">
-												<div class="row">
-													<div class="col-lg-4 col-md-3 col-sm-12">
-														<div class="content-box">
-															<span for="">Institution</span>
-															<input type="text">
-														</div>
-													</div>
-													<div class="col-lg-3 col-md-3 col-sm-12">
-														<div class="content-box">
-															<span for="">Degree</span>
-															<input type="text">
-														</div>
-													</div>
-													<div class="col-lg-3 col-md-3 col-sm-12">
-														<div class="content-box">
-															<span for="">Major</span>
-															<input type="text">
-														</div>
-													</div>
-													<div class="col-lg-2 col-md-2 col-sm-12">
-														<div class="content-box">
-															<span for="">GPA</span>
-															<input type="text">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-lg-3 col-md-3 col-sm-12">
-														<div class="content-box">
-															<span for="">Start Date</span>
-															<input type="text">
-														</div>
-													</div>
-													<div class="col-lg-3 col-md-3 col-sm-12">
-														<div class="content-box">
-															<span for="">End Date</span>
-															<input type="text">
-														</div>
-													</div>
-													<div class="col-lg-6 col-md-6 col-sm-12">
-														<div class="content-box">
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<input type="submit" value="SUBMIT" class="btn--blue">
-									</form>
-								</div>
-								
-								<input type="radio" name="tabs" id="tabtwo">
-								<label for="tabtwo">Job</label>
-								<div class="tab">
-									<form action="">
-										<h4 class="title-box-light mb--20"><strong> Employment Status</strong></h4>
-										<div class="row">
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Effective Date</span>
-													<input type="date" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Employment Status</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-6 col-md-6 col-sm-12">
-												<div class="content-box">
-													<span for="">Comment</span>
-													<textarea name="" id="" cols="30" rows="10" disabled></textarea>
-												</div>
-											</div>
-										</div>
+                    <h4 class="title-box-light mb--20">
+                      <strong> Education</strong>
+                    </h4>
 
-										<h4 class="title-box-light mb--20"><strong> Job Information</strong></h4>
-										<div class="row">
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Job title</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Hire Date</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Effective Date</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Direct Reports</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Location</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Division</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Department</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Reports To</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-										</div>
-										
-										<h4 class="title-box-light mb--20"><strong> Compensation Details</strong></h4>
-										<div class="row">
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Effective Date</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Pay Rate</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Pay Type</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Overtime</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Pay Schedule</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Change Reason</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-6 col-md-6 col-sm-12">
-												<div class="content-box">
-													<span for="">Comment</span>
-													<textarea name="" id="" cols="30" rows="10" disable></textarea>
-												</div>
-											</div>
-										</div>
+                    <div class="tab-accordion">
+                      <input
+                        id="tab-one"
+                        class="tab-trigger"
+                        type="checkbox"
+                        name="tabs"
+                      />
+                      <label for="tab-one" class="tab-label"
+                        >Under Graduate</label
+                      >
+                      <div class="tab-content">
+                        <div class="content-box clearfix">
+                          <div class="row">
+                            <div class="col-lg-4 col-md-3 col-sm-12">
+                              <div class="content-box">
+                                <span for="">Institution</span>
+                                <input type="text" />
+                              </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12">
+                              <div class="content-box">
+                                <span for="">Degree</span>
+                                <input type="text" />
+                              </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12">
+                              <div class="content-box">
+                                <span for="">Major</span>
+                                <input type="text" />
+                              </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-12">
+                              <div class="content-box">
+                                <span for="">GPA</span>
+                                <input type="text" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-12">
+                              <div class="content-box">
+                                <span for="">Start Date</span>
+                                <input type="text" />
+                              </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12">
+                              <div class="content-box">
+                                <span for="">End Date</span>
+                                <input type="text" />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="content-box"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-									</form>
-								</div>
-								
-								<input type="radio" name="tabs" id="tabthree">
-								<label for="tabthree">Time Off</label>
-								<div class="tab">
-									<form action="">										
-										<div class="row">
+                    <div class="tab-accordion">
+                      <input
+                        id="tab-two"
+                        class="tab-trigger"
+                        type="checkbox"
+                        name="tabs"
+                      />
+                      <label for="tab-two" class="tab-label"
+                        >Graduate Studies</label
+                      >
+                      <div class="tab-content">
+                        <div class="row">
+                          <div class="col-lg-4 col-md-3 col-sm-12">
+                            <div class="content-box">
+                              <span for="">Institution</span>
+                              <input type="text" />
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="content-box">
+                              <span for="">Degree</span>
+                              <input type="text" />
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="content-box">
+                              <span for="">Major</span>
+                              <input type="text" />
+                            </div>
+                          </div>
+                          <div class="col-lg-2 col-md-2 col-sm-12">
+                            <div class="content-box">
+                              <span for="">GPA</span>
+                              <input type="text" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="content-box">
+                              <span for="">Start Date</span>
+                              <input type="text" />
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="content-box">
+                              <span for="">End Date</span>
+                              <input type="text" />
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="content-box"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-accordion">
+                      <input
+                        id="tab-three"
+                        class="tab-trigger"
+                        type="checkbox"
+                        name="tabs"
+                      />
+                      <label for="tab-three" class="tab-label"
+                        >Post Graduate</label
+                      >
+                      <div class="tab-content">
+                        <div class="row">
+                          <div class="col-lg-4 col-md-3 col-sm-12">
+                            <div class="content-box">
+                              <span for="">Institution</span>
+                              <input type="text" />
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="content-box">
+                              <span for="">Degree</span>
+                              <input type="text" />
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="content-box">
+                              <span for="">Major</span>
+                              <input type="text" />
+                            </div>
+                          </div>
+                          <div class="col-lg-2 col-md-2 col-sm-12">
+                            <div class="content-box">
+                              <span for="">GPA</span>
+                              <input type="text" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="content-box">
+                              <span for="">Start Date</span>
+                              <input type="text" />
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="content-box">
+                              <span for="">End Date</span>
+                              <input type="text" />
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="content-box"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <input type="submit" value="SUBMIT" class="btn--blue" />
+                  </form>
+                </div>
+
+                <input type="radio" name="tabs" id="tabtwo" />
+                <label for="tabtwo">Job</label>
+                <div class="tab">
+                  <form action="">
+                    <h4 class="title-box-light mb--20">
+                      <strong> Employment Status</strong>
+                    </h4>
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Effective Date</span>
+                          <input type="date" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Employment Status</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Comment</span>
+                          <textarea
+                            name=""
+                            id=""
+                            cols="30"
+                            rows="10"
+                            disabled
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h4 class="title-box-light mb--20">
+                      <strong> Job Information</strong>
+                    </h4>
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Job title</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Hire Date</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Effective Date</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Direct Reports</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Location</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Division</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Department</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Reports To</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                    </div>
+
+                    <h4 class="title-box-light mb--20">
+                      <strong> Compensation Details</strong>
+                    </h4>
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Effective Date</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Pay Rate</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Pay Type</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Overtime</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Pay Schedule</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Change Reason</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Comment</span>
+                          <textarea
+                            name=""
+                            id=""
+                            cols="30"
+                            rows="10"
+                            disable
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <input type="radio" name="tabs" id="tabthree" />
+                <label for="tabthree">Time Off</label>
+                <div class="tab">
+                  <form action="">
+                    <div class="row">
 											<div class="col-lg-3 col-md-3 col-sm-12">
 												<div class="content-box bg--highlight title-box-light t-center color--blue">
 													<p>Vacation</p>
@@ -577,8 +651,7 @@
 														  <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle">Hours Available</text>
 														</g>
 													</svg>
-													<!-- <h4 class="fa-3x mb--10 t-exbold">114</h4>
-													<span>Hours Available</span> -->
+											
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-3 col-sm-12">
@@ -592,8 +665,7 @@
 														  <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle">Day(s) Used</text>
 														</g>
 													</svg>
-													<!-- <h4 class="fa-3x mb--10 t-exbold">1</h4>
-													<span>Day Used</span> -->
+												
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-3 col-sm-12">
@@ -607,8 +679,7 @@
 														  <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle">Hours Used</text>
 														</g>
 													</svg>
-													<!-- <h4 class="fa-3x mb--10 t-exbold">8</h4>
-													<span>Hours Used</span> -->
+											
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-3 col-sm-12">
@@ -622,214 +693,680 @@
 														  <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle">Days Available/text>
 														</g>
 													</svg>
-													<!-- <h4 class="fa-3x mb--10 t-exbold">5</h4>
-													<span>Days Available</span> -->
-												</div>
-											</div>
-										</div>
-
-										<h4 class="title-box-light mb--20"><strong> Upcoming Time Off</strong></h4>
-
-										<div class="row">
-											<div class="col-lg-12 col-md-12 col-sm-12">
-												<div class="content-box">
-													<div class="list">
-														<ul>
-															<li class="list-box">
-																<div class="list-icon">
-																	<img src="../img/calendar-alt-solid-blue.svg" alt="" >
-																</div>
-																<div class="list-info">
-																	<span class="list-title">October 30, 2020</span>
-																	<span class="list-details">Regular Holiday </span>
-																</div>
-															</li>
-															<li class="list-box">
-																<div class="list-icon">
-																	<img src="../img/calendar-alt-solid-blue.svg" alt="" >
-																</div>
-																<div class="list-info">
-																	<span class="list-title">November 05, 2020</span>
-																	<span class="list-details">Vacation Leave </span>
-																</div>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<h4 class="title-box-light mb--20"><strong> History</strong></h4>
-										
-										<table id="" class="" cellspacing="0" width="100%" style="width: 100%;">
-											<thead class="title-box-light">
-												<tr>
-													<th class="" tabindex="0" rowspan="1" colspan="1">Date</th>
-													<th class="" tabindex="0" rowspan="1" colspan="1">Description</th>
-													<th class="" tabindex="0" rowspan="1" colspan="1">Used(-)</th>
-													<th class="" tabindex="0" rowspan="1" colspan="1">Accrued(+)</th>
-													<th class="action" rowspan="1" colspan="1" style="width: 168px;">Balance</th>
-												</tr>
-											</thead>
-											<tbody id="idTableBodyparent">
-												<tr>
-													<td class="" tabindex="0" rowspan="1" colspan="1" style="width: 200px;">01/21/2020</td>
-													<td class="" tabindex="0" rowspan="1" colspan="1">Vacation: Additional day with MLK day</h5> </td>
-													<td class="" tabindex="0" rowspan="1" colspan="1" style="width: 150px;">-8.00 hours</td>
-													<td class="" tabindex="0" rowspan="1" colspan="1" style="width: 150px;"></td>
-													<td class="" tabindex="0" rowspan="1" colspan="1" style="width: 150px;">111.00 hours</td>
-												</tr>
-												<tr>
-													<td class="" tabindex="0" rowspan="1" colspan="1" style="width: 200px;">01/21/2020</td>
-													<td class="" tabindex="0" rowspan="1" colspan="1">Vacation: Accrual for 01/01/20 to 13/31/2020</td>
-													<td class="" tabindex="0" rowspan="1" colspan="1" style="width: 150px;"></td>
-													<td class="" tabindex="0" rowspan="1" colspan="1" style="width: 150px;">130.00 hours</td>
-													<td class="" tabindex="0" rowspan="1" colspan="1" style="width: 150px;">114.00 hours</td>
-												</tr>
 												
-											</tbody>
-										</table>
-									</form>
-								</div>
-
-								<input type="radio" name="tabs" id="tabfour">
-								<label for="tabfour">Emergency</label>
-								<div class="tab">
-									<form action="">
-										<h4 class="title-box-light mb--20"><strong> Emergency Contact</strong></h4>
-										<div class="row">
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Name</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Relationship</span>
-													<select name="" id="">
-														<option value="">Brother</option>
-														<option value="">Daughter</option>
-														<option value="">Father</option>
-														<option value="">Friend</option>
-														<option value="">Husband</option>
-														<option value="">Mother</option>
-														<option value="">Sister</option>
-														<option value="">Son</option>
-														<option value="">Wife</option>
-													</select>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-												</div>
-											</div>
-											<div class="col-lg-6 col-md-6 col-sm-12">
-												<div class="content-box">
 												</div>
 											</div>
 										</div>
 
-										<div class="row">
-											<div class="col-lg-4 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Work Phone</span>
-													<input type="tel" disabled>
-												</div>
-											</div>
-											<div class="col-lg-2 col-md-2 col-sm-12">
-												<div class="content-box">
-													<span for="">Ext</span>
-													<input type="text" disabled>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Mobile Phone</span>
-													<input type="tel">
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-12">
-												<div class="content-box">
-													<span for="">Home Phone</span>
-													<input type="tel">
-												</div>
-											</div>
-										</div>
+                    <h4 class="title-box-light mb--20">
+                      <strong> Upcoming Time Off</strong>
+                    </h4>
 
-										<h4 class="title-box-light mb--20"><strong> Email</strong></h4>
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="content-box">
+                          <div class="list">
+                            <ul>
+                              <li class="list-box">
+                                <div class="list-icon">
+                                  <img
+                                    src="../img/calendar-alt-solid-blue.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="list-info">
+                                  <span class="list-title"
+                                    >October 30, 2020</span
+                                  >
+                                  <span class="list-details"
+                                    >Regular Holiday
+                                  </span>
+                                </div>
+                              </li>
+                              <li class="list-box">
+                                <div class="list-icon">
+                                  <img
+                                    src="../img/calendar-alt-solid-blue.svg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="list-info">
+                                  <span class="list-title"
+                                    >November 05, 2020</span
+                                  >
+                                  <span class="list-details"
+                                    >Vacation Leave
+                                  </span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-										<div class="row">
-											<div class="col-lg-4 col-md-4 col-sm-12">
-												<div class="content-box">
-													<span for="">Work Email</span>
-													<input type="email" disabled>
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4 col-sm-12">
-												<div class="content-box">
-													<span for="">Home Email</span>
-													<input type="email">
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4 col-sm-12">
-												<div class="content-box">
-													
-												</div>
-											</div>
-										</div>
+                    <h4 class="title-box-light mb--20">
+                      <strong> History</strong>
+                    </h4>
 
-										<h4 class="title-box-light mb--20"><strong> Address</strong></h4>
+                    <table
+                      id=""
+                      class=""
+                      cellspacing="0"
+                      width="100%"
+                      style="width: 100%"
+                    >
+                      <thead class="title-box-light">
+                        <tr>
+                          <th class="" tabindex="0" rowspan="1" colspan="1">
+                            Date
+                          </th>
+                          <th class="" tabindex="0" rowspan="1" colspan="1">
+                            Description
+                          </th>
+                          <th class="" tabindex="0" rowspan="1" colspan="1">
+                            Used(-)
+                          </th>
+                          <th class="" tabindex="0" rowspan="1" colspan="1">
+                            Accrued(+)
+                          </th>
+                          <th
+                            class="action"
+                            rowspan="1"
+                            colspan="1"
+                            style="width: 168px"
+                          >
+                            Balance
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody id="idTableBodyparent">
+                        <tr>
+                          <td
+                            class=""
+                            tabindex="0"
+                            rowspan="1"
+                            colspan="1"
+                            style="width: 200px"
+                          >
+                            01/21/2020
+                          </td>
+                          <td class="" tabindex="0" rowspan="1" colspan="1">
+                            Vacation: Additional day with MLK day
+                          </td>
+                          <td
+                            class=""
+                            tabindex="0"
+                            rowspan="1"
+                            colspan="1"
+                            style="width: 150px"
+                          >
+                            -8.00 hours
+                          </td>
+                          <td
+                            class=""
+                            tabindex="0"
+                            rowspan="1"
+                            colspan="1"
+                            style="width: 150px"
+                          ></td>
+                          <td
+                            class=""
+                            tabindex="0"
+                            rowspan="1"
+                            colspan="1"
+                            style="width: 150px"
+                          >
+                            111.00 hours
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class=""
+                            tabindex="0"
+                            rowspan="1"
+                            colspan="1"
+                            style="width: 200px"
+                          >
+                            01/21/2020
+                          </td>
+                          <td class="" tabindex="0" rowspan="1" colspan="1">
+                            Vacation: Accrual for 01/01/20 to 13/31/2020
+                          </td>
+                          <td
+                            class=""
+                            tabindex="0"
+                            rowspan="1"
+                            colspan="1"
+                            style="width: 150px"
+                          ></td>
+                          <td
+                            class=""
+                            tabindex="0"
+                            rowspan="1"
+                            colspan="1"
+                            style="width: 150px"
+                          >
+                            130.00 hours
+                          </td>
+                          <td
+                            class=""
+                            tabindex="0"
+                            rowspan="1"
+                            colspan="1"
+                            style="width: 150px"
+                          >
+                            114.00 hours
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </form>
+                </div>
 
-										<div class="row">
-											<div class="col-lg-6 col-md-6 col-sm-12">
-												<div class="content-box">
-													<span for="">Street</span>
-													<input type="text">
-												</div>
-											</div>
-											<div class="col-lg-6 col-md-6 col-sm-12">
-												<div class="content-box">
-													<span for="">City</span>
-													<input type="text">
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-4 col-md-4 col-sm-12">
-												<div class="content-box">
-													<span for="">State</span>
-													<select name="" id="">
-														<option value="">AK</option>
-														<option value="">AL</option>
-														<option value="">AR</option>
-													</select>
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4 col-sm-12">
-												<div class="content-box">
-													<span for="">Zip</span>
-													<input type="text">
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4 col-sm-12">
-												<div class="content-box">
-													<span for="">Country</span>
-													<select name="" id="">
-														<option value="">United States</option>
-														<option value="">Japan</option>
-														<option value="">Philippines</option>
-													</select>	
-												</div>
-											</div>
-										</div>
-									</form>
-								</div>
+                <input type="radio" name="tabs" id="tabfour" />
+                <label for="tabfour">Emergency</label>
+                <div class="tab">
+                  <form action="">
+                    <h4 class="title-box-light mb--20">
+                      <strong> Emergency Contact</strong>
+                    </h4>
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Name</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Relationship</span>
+                          <select name="" id="">
+                            <option value="">Brother</option>
+                            <option value="">Daughter</option>
+                            <option value="">Father</option>
+                            <option value="">Friend</option>
+                            <option value="">Husband</option>
+                            <option value="">Mother</option>
+                            <option value="">Sister</option>
+                            <option value="">Son</option>
+                            <option value="">Wife</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box"></div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="content-box"></div>
+                      </div>
+                    </div>
 
-								<input type="radio" name="tabs" id="tabfive">
-								<label for="tabfive">Benefits</label>
-								<div class="tab">
-									<form action="">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Work Phone</span>
+                          <input type="tel" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-2 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Ext</span>
+                          <input type="text" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Mobile Phone</span>
+                          <input type="tel" />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Home Phone</span>
+                          <input type="tel" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <h4 class="title-box-light mb--20">
+                      <strong> Email</strong>
+                    </h4>
+
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Work Email</span>
+                          <input type="email" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Home Email</span>
+                          <input type="email" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-box"></div>
+                      </div>
+                    </div>
+
+                    <h4 class="title-box-light mb--20">
+                      <strong> Address</strong>
+                    </h4>
+
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Street</span>
+                          <input type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="content-box">
+                          <span for="">City</span>
+                          <input type="text" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-box">
+                          <span for="">State</span>
+                          <select name="" id="">
+                            <option value="">AK</option>
+                            <option value="">AL</option>
+                            <option value="">AR</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Zip</span>
+                          <input type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="content-box">
+                          <span for="">Country</span>
+                          <select name="" id="">
+                            <option value="">United States</option>
+                            <option value="">Japan</option>
+                            <option value="">Philippines</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <input type="radio" name="tabs" id="tabfive" />
+                <label for="tabfive">Benefits</label>
+                <div class="tab">
+                  <h4 class="title-box-light">
+                    <strong>Health Benefits</strong>
+                  </h4>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <table
+                        id=""
+                        class="table-res"
+                        cellspacing="0"
+                        width="100%"
+                        style="width: 100%"
+                      >
+                        <thead class="title-box-light">
+                          <tr>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Benefit
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Effectivity
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Coverage
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Emp. Pays
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Comp. Pays
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Frequency
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody id="directory">
+                          <tr>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              US Health Insurance
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              06/28/2019
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              Employee
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              $47.00
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              $45.31
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              Every Other Week
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <h4 class="title-box-light">
+                    <strong>Dental Benefit</strong>
+                  </h4>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <table
+                        id=""
+                        class="table-res"
+                        cellspacing="0"
+                        width="100%"
+                        style="width: 100%"
+                      >
+                        <thead class="title-box-light">
+                          <tr>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Benefit
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Effectivity
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Coverage
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Emp. Pays
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Comp. Pays
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Frequency
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody id="directory">
+                          <tr>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              Dental Insurance
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              01/01/2017
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              Employee + Family
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              $14.00
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              $9.08
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              Every Other Week
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <h4 class="title-box-light">
+                    <strong>Vision Benefit</strong>
+                  </h4>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <table
+                        id=""
+                        class="table-res"
+                        cellspacing="0"
+                        width="100%"
+                        style="width: 100%"
+                      >
+                        <thead class="title-box-light">
+                          <tr>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Benefit
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Effectivity
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Coverage
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Emp. Pays
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Comp. Pays
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Frequency
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody id="directory">
+                          <tr>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              VSP Vision
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              05/30/2019
+                            </td>
+                            <td
+                              class=""
+                              tabindex="0"
+                              rowspan="1"
+                              colspan="1"
+                            ></td>
+                            <td
+                              class=""
+                              tabindex="0"
+                              rowspan="1"
+                              colspan="1"
+                            ></td>
+                            <td
+                              class=""
+                              tabindex="0"
+                              rowspan="1"
+                              colspan="1"
+                            ></td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              Every Other Week
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <h4 class="title-box-light">
+                    <strong>Retirement Benefit</strong>
+                  </h4>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <table
+                        id=""
+                        class="table-res"
+                        cellspacing="0"
+                        width="100%"
+                        style="width: 100%"
+                      >
+                        <thead class="title-box-light">
+                          <tr>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Benefit
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Effectivity
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Coverage
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Emp. Pays
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Comp. Pays
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Frequency
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody id="directory">
+                          <tr>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              401(K)
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              12/06/2019
+                            </td>
+                            <td
+                              class=""
+                              tabindex="0"
+                              rowspan="1"
+                              colspan="1"
+                            ></td>
+                            <td
+                              class=""
+                              tabindex="0"
+                              rowspan="1"
+                              colspan="1"
+                            ></td>
+                            <td
+                              class=""
+                              tabindex="0"
+                              rowspan="1"
+                              colspan="1"
+                            ></td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              Every Other Week
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <h4 class="title-box-light">
+                    <strong>Dependents</strong>
+                  </h4>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <table
+                        id=""
+                        class="table-res"
+                        cellspacing="0"
+                        width="100%"
+                        style="width: 100%"
+                      >
+                        <thead class="title-box-light">
+                          <tr>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Name
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Relationship
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Gender
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              SSN
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              SIN
+                            </th>
+                            <th class="" tabindex="0" rowspan="1" colspan="1">
+                              Birth Date
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody id="directory">
+                          <tr>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              <input
+                                type="text"
+                                name=""
+                                id=""
+                                value="Kevin Abbott"
+                              />
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              <select name="" id="">
+                                <option value="Spouse">Spouse</option>
+                                <option value="Husband">Husband</option>
+                              </select>
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              <select name="" id="">
+                                <option value="Spouse">Male</option>
+                                <option value="Husband">Female</option>
+                              </select>
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              <input type="text" value="XXX-XX-1234"/>
+                            </td>
+                            <td
+                              class=""
+                              tabindex="0"
+                              rowspan="1"
+                              colspan="1"
+							>
+						<input type="text"></td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                            <input type="date">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              <input
+                                type="text"
+                                name=""
+                                id=""
+                                value="Kevin Abbott"
+                              />
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              <select name="" id="">
+                                <option value="Spouse">Spouse</option>
+                                <option value="Husband">Husband</option>
+                              </select>
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              <select name="" id="">
+                                <option value="Spouse">Male</option>
+                                <option value="Husband">Female</option>
+                              </select>
+                            </td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                              <input type="text" value="XXX-XX-1234"/>
+                            </td>
+                            <td
+                              class=""
+                              tabindex="0"
+                              rowspan="1"
+                              colspan="1"
+							>
+						<input type="text"></td>
+                            <td class="" tabindex="0" rowspan="1" colspan="1">
+                            <input type="date">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- <form action="">
 										<h4 class="title-box-light mb--20"><strong> Health Benefits</strong></h4>
 										<div class="row">
 											<div class="col-lg-2 col-md-2 col-sm-12">
@@ -1067,63 +1604,68 @@
 												</div>
 											</div>
 										</div>
-									</form>
-								</div>
-							</div>
-						
-					</div>
-				</div>
-						
-			</div>		
-		</div>
-	</section>
+									</form> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<footer>
-        <div class="container">
-			<div class="row row-relative">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="content-box t-center">
-						<img src="../img/logo-tm-bw.png" class="aligncenter">         			
-						<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script></p>
-						<p class="no-mg">Powered By: Frontline Business Solutions, Inc.</script></p>
+    <footer>
+      <div class="container">
+        <div class="row row-relative">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="content-box t-center">
+              <img src="../img/logo-tm-bw.png" class="aligncenter" />
+              <p>
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+              </p>
+              <p class="no-mg">
+                Powered By: Frontline Business Solutions, Inc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>	
+    <div id="" class="bck-top">
+      <a href="#top"><img src="../img/caret-up-solid.svg" alt="" /></a>
+    </div>
+    <script>
+      //SLIDE MENU IN MOBILE
+      function classToggle() {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("toggle-open");
+      }
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", classToggle);
 
-	<div id="" class="bck-top"><a href="#top"><img src="../img/caret-up-solid.svg" alt=""></a></div>   
-	<script>
-		//SLIDE MENU IN MOBILE
-		function classToggle() {
-			var nav = document.querySelector('nav');
-			nav.classList.toggle('toggle-open');
-		}
-		document.querySelector('.menu-toggle').addEventListener('click', classToggle);
+      //SHOW BACK TO TOP
+      var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 20) {
+          document.querySelector(".bck-top").style.display = "block";
+        } else {
+          document.querySelector(".bck-top").style.display = "none";
+        }
+      };
 
+      window.addEventListener("scroll", myScrollFunc);
 
-		//SHOW BACK TO TOP
-		var myScrollFunc = function() {
-		var y = window.scrollY;
-			if (y >= 20) {
-				document.querySelector('.bck-top').style.display = 'block';
-			} else {
-				document.querySelector('.bck-top').style.display = 'none';
-			}
-		};
-
-		window.addEventListener("scroll", myScrollFunc);
-
-
-		//ICON ANIMATION
-		function iconAnimate() {
-			this.classList.toggle('open');
-		}
-		document.querySelector('#nav-icon3').addEventListener('click', iconAnimate);
-
-
-</script> 		
-</body>
+      //ICON ANIMATION
+      function iconAnimate() {
+        this.classList.toggle("open");
+      }
+      document
+        .querySelector("#nav-icon3")
+        .addEventListener("click", iconAnimate);
+    </script>
+  </body>
 </html>
-
