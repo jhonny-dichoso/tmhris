@@ -1457,7 +1457,7 @@ section {
   padding: 1rem 1.3rem;
   margin-right: 0.2rem;
   cursor: pointer;
-  background: #3a3b36;
+  background: #777777;
   color: #fff;
   transition: background ease 0.2s;
 }
@@ -2392,7 +2392,6 @@ article:after {
   }
 }
 
-
 .notification-badge {
   border-radius: 20px;
   background: #ff6f00;
@@ -2467,4 +2466,3 @@ article:after {
 .calendar-wrapper .calendar-wrap:nth-child(odd) {
   margin: 0 20px;
 }
-
