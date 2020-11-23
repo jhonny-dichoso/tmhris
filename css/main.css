@@ -2331,17 +2331,13 @@ article:after {
   margin-top: 30px;
 }
 
-.cal-bg-gray {
-  background: #f6f6f6;
-  padding: 30px 0;
-}
 .mt--20 {
   margin-top: 20px;
 }
 
 .calendar-wrapper {
   background-color: #fff;
-  margin: 0 8fpx;
+  margin: 0 8px;
 }
 
 .calendar-wrap {
