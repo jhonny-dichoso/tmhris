@@ -2215,6 +2215,14 @@ article:after {
   .table-res td {
     padding-left: 55%;
   }
+
+  .calendar-wrapper .calendar-wrap:nth-child(even) {
+    margin: 0 10px;
+  }
+
+  .calendar-wrapper .calendar-wrap:nth-child(odd) {
+    margin: 0 10px;
+  }
 }
 
 /* --Roy's add-- */
@@ -2245,7 +2253,7 @@ article:after {
 
 .month {
   color: #fff;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -2263,10 +2271,22 @@ article:after {
   margin-top: 30px;
 }
 
-.pd-y-20 {
-  padding: 0 20px;
+.mt--20 {
+  margin-top: 20px;
 }
 
-.cal-bg:nth-child(even) {
-  background: #f8f9fb !important;
+.calendar-wrapper {
+  background-color: #fff;
+}
+
+.calendar-wrap {
+  padding-bottom: 30px;
+}
+
+.calendar-wrapper .calendar-wrap:nth-child(even) {
+  background-color: #f8f9fb;
+}
+
+.calendar-wrapper .calendar-wrap:nth-child(odd) {
+  margin: 0 20px;
 }
