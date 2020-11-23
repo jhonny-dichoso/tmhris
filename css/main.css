@@ -2215,4 +2215,78 @@ article:after {
   .table-res td {
     padding-left: 55%;
   }
+
+  .calendar-wrapper .calendar-wrap:nth-child(even) {
+    margin: 0 10px;
+  }
+
+  .calendar-wrapper .calendar-wrap:nth-child(odd) {
+    margin: 0 10px;
+  }
+}
+
+/* --Roy's add-- */
+
+.input-pd-icon-none {
+  padding-left: 10px !important;
+}
+
+.month-head {
+  margin-left: 20px;
+}
+
+.cal-box {
+  /* align-self: flex-start; */
+  width: 25%;
+  padding: 19px 5px;
+}
+
+.date {
+  font-size: 32px;
+  color: #fff;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #dcdcdc;
+  text-align: center;
+}
+
+.month {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.cal-info {
+  background: #eeeeee;
+  padding: 19px;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.mt--30 {
+  margin-top: 30px;
+}
+
+.mt--20 {
+  margin-top: 20px;
+}
+
+.calendar-wrapper {
+  background-color: #fff;
+}
+
+.calendar-wrap {
+  padding-bottom: 30px;
+}
+
+.calendar-wrapper .calendar-wrap:nth-child(even) {
+  background-color: #f8f9fb;
+}
+
+.calendar-wrapper .calendar-wrap:nth-child(odd) {
+  margin: 0 20px;
 }
