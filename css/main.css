@@ -2225,14 +2225,6 @@ article:after {
   .table-res td {
     padding-left: 55%;
   }
-
-  .calendar-wrapper .calendar-wrap:nth-child(even) {
-    margin: 0 10px;
-  }
-
-  .calendar-wrapper .calendar-wrap:nth-child(odd) {
-    margin: 0 10px;
-  }
 }
 
 /* ===================================================================
@@ -2293,6 +2285,7 @@ article:after {
 
 .month-head {
   margin-left: 20px;
+  margin-top: 20px;
 }
 
 .cal-box {
@@ -2327,14 +2320,6 @@ article:after {
   border: none !important;
 }
 
-.mt--30 {
-  margin-top: 30px;
-}
-
-.mt--20 {
-  margin-top: 20px;
-}
-
 .calendar-wrapper {
   background-color: #fff;
   margin: 0 8px;
@@ -2346,9 +2331,4 @@ article:after {
 
 .calendar-wrapper .calendar-wrap:nth-child(even) {
   background-color: #f8f9fb;
-  margin: 0 20px;
-}
-
-.calendar-wrapper .calendar-wrap:nth-child(odd) {
-  margin: 0 20px;
 }
