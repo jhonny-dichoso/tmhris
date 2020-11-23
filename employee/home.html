@@ -202,50 +202,54 @@
                       >REQUEST TIME OFF</a
                     >
                   </div>
-                  <div id="request-form" class="request-form">
-                    <div class="row">
-                      <hr />
-                      <form action="">
-                        <div class="request-form-wrapper mb--30">
-                          <label for="start-date">Start Date</label>
-                          <input type="date" />
-                        </div>
-                        <div class="request-form-wrapper mb--30">
-                          <label for="returning-date">Returning Date</label>
-                          <input type="date" />
-                        </div>
-                        <div class="request-form-wrapper mb--30">
-                          <label for="start-date">Day(s)</label>
-                          <select name="" id="">
-                            <option value="-">-</option>
-                            <option value="Sample">Sample</option>
-                          </select>
-                        </div>
-                        <div class="request-form-wrapper mb--30">
-                          <label for="returning-date">Type of Leave</label>
-                          <select name="" id="">
-                            <option value="-">-</option>
-                            <option value="Sample">Sample</option>
-                          </select>
-                        </div>
-                        <label for="description">Description</label>
-                        <textarea
-                          class="mb--30"
-                          name=""
-                          id=""
-                          cols="30"
-                          rows="10"
-                        ></textarea>
-                        <div class="request-form-wrapper mb--30">
-                          <a class="btn--blue bg--green no-mg"
-                            >APPLY TIME OFF</a
-                          >
-                          <a id="btnCancel" class="btn--blue bg--green no-mg"
-                            >CANCEL</a
-                          >
-                        </div>
-                      </form>
+                  <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                      <div id="request-form" class="request-form">
+                        <hr />
+                        <form action="">
+                          <div class="request-form-wrapper mb--30">
+                            <label for="start-date">Start Date</label>
+                            <input type="date" />
+                          </div>
+                          <div class="request-form-wrapper mb--30">
+                            <label for="returning-date">Returning Date</label>
+                            <input type="date" />
+                          </div>
+                          <div class="request-form-wrapper mb--30">
+                            <label for="start-date">Day(s)</label>
+                            <select name="" id="">
+                              <option value="-">-</option>
+                              <option value="Sample">Sample</option>
+                            </select>
+                          </div>
+                          <div class="request-form-wrapper mb--30">
+                            <label for="returning-date">Type of Leave</label>
+                            <select name="" id="">
+                              <option value="-">-</option>
+                              <option value="Sample">Sample</option>
+                            </select>
+                          </div>
+                          <label for="description">Description</label>
+                          <textarea
+                            class="mb--30"
+                            name=""
+                            id=""
+                            cols="30"
+                            rows="10"
+                          ></textarea>
+                          <div class="request-form-wrapper mb--30">
+                            <a class="btn--blue bg--green no-mg"
+                              >APPLY TIME OFF</a
+                            >
+                            <a id="btnCancel" class="btn--blue bg--green no-mg"
+                              >CANCEL</a
+                            >
+                          </div>
+                        </form>
+                      </div>
                     </div>
+                    <div class="col-lg-2"></div>
                   </div>
                 </div>
                 <input type="radio" name="tabs" id="tabtwo" />
@@ -470,11 +474,11 @@
         formRequestForm = document.querySelector(".request-form");
 
       btnRequestTimeOff.addEventListener("click", () => {
-        formRequestForm.classList.add("show-block");
+        formRequestForm.classList.add("show");
       });
 
       btnCancel.addEventListener("click", () => {
-        formRequestForm.classList.remove("show-block");
+        formRequestForm.classList.remove("show");
       });
     </script>
   </body>

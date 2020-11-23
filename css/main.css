@@ -1738,12 +1738,12 @@ section {
 }
 
 .request-form form div {
-  width: 300px;
+  width: 280px;
 }
 
 .request-form-wrapper a {
   display: inline-block;
-  width: 300px;
+  width: 280px;
 }
 
 .request-form-wrapper a:first-child {
@@ -2392,7 +2392,6 @@ article:after {
   }
 }
 
-
 .notification-badge {
   border-radius: 20px;
   background: #ff6f00;
@@ -2467,4 +2466,3 @@ article:after {
 .calendar-wrapper .calendar-wrap:nth-child(odd) {
   margin: 0 20px;
 }
-
