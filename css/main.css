@@ -2278,6 +2278,13 @@ article:after {
   padding: 10px 0;
 }
 
+.alert-icon img {
+  height: 35px;
+  color: #ffffff;
+  vertical-align: middle;
+  fill: #ffffff;
+}
+
 .alert {
   padding: 20px;
   background-color: #f44336;
