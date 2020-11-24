@@ -156,6 +156,7 @@ body {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  margin-bottom: 20px;
 }
 
 td,
@@ -474,6 +475,7 @@ textarea {
   border: 1px solid #d8dae0;
   padding: 10px;
   border-radius: 3px;
+  width: 100%;
 }
 
 input[type="password"]:focus,
@@ -1457,7 +1459,7 @@ section {
   padding: 1rem 1.3rem;
   margin-right: 0.2rem;
   cursor: pointer;
-  background: #3a3b36;
+  background: #777777;
   color: #fff;
   transition: background ease 0.2s;
 }
@@ -1631,7 +1633,8 @@ section {
 }
 
 #directory td {
-  padding: 0;
+  padding: 10px;
+  word-break: break-all;
 }
 
 .bottomborder {
@@ -1646,10 +1649,6 @@ section {
 
 .show {
   display: inline-block !important;
-}
-
-.show-block {
-  display: block !important;
 }
 
 #login {
@@ -1717,7 +1716,7 @@ section {
 
 .request-form {
   margin: 60px auto;
-  width: 600px;
+  width: 100%;
   display: none;
 }
 
@@ -1733,38 +1732,8 @@ section {
   cursor: none;
 }
 
-.request-form-wrapper {
-  display: inline-block;
-}
-
-.request-form form div {
-  width: 280px;
-}
-
-.request-form-wrapper a {
-  display: inline-block;
-  width: 280px;
-}
-
-.request-form-wrapper a:first-child {
-  float: left;
-}
-
-.request-form-wrapper a:last-child {
-  float: right;
-}
-
-.request-form form div:nth-child(odd) {
-  float: left;
-}
-
-.request-form form div:nth-child(even) {
-  float: right;
-}
-
-.request-form form div:last-child {
-  float: none;
-  width: 100%;
+.request-form a {
+  display: block;
 }
 
 .space-evenly {
@@ -1868,23 +1837,6 @@ article:after {
 }
 
 @media (max-width: 768px) {
-  .request-form-wrapper a {
-    display: block !important;
-    margin-bottom: 30px !important;
-    width: 100% !important;
-  }
-  .request-form-wrapper div {
-    float: none !important;
-  }
-  .request-form-wrapper {
-    display: block !important;
-  }
-  .request-form form div {
-    width: 100% !important;
-  }
-  .request-form {
-    width: 100% !important;
-  }
   #banner .wrapper {
     height: auto;
   }
@@ -1909,19 +1861,6 @@ article:after {
   .user-dp {
     margin: 0;
   }
-  /* .banner-content .user ul li {
-    height: unset;
-    margin: 0 !important;
-    vertical-align: middle;
-  }
-  .banner-content,
-  .banner-date {
-    text-align: center;
-    display: block;
-  }
-  .banner-wrapper {
-    display: block;
-  } */
 
   .tab-content .card-details {
     display: block;
@@ -1935,11 +1874,6 @@ article:after {
 }
 
 @media (max-width: 429px) {
-  /* .banner-wrapper,
-  .banner-content {
-    display: block;
-    text-align: center;
-  } */
   .user-dp img {
     width: 50px;
     height: 50px;
@@ -2257,6 +2191,10 @@ article:after {
 }
 
 @media screen and (max-width: 970px) {
+  .title-box-light {
+    text-align: center;
+  }
+
   .table-res tr:nth-of-type(odd) {
     background: #eee;
     padding: 15px 5px;
@@ -2277,11 +2215,6 @@ article:after {
     left: -9999px;
   }
 
-  .table-res tbody tr td:first-child {
-    padding-left: 0 !important;
-    text-align: center;
-  }
-
   .table-res tr {
     border: none;
     border-bottom: 1px solid #ddd;
@@ -2291,7 +2224,7 @@ article:after {
   .table-res td {
     border: none;
     position: relative;
-    padding-left: 55% !important;
+    padding-left: 50% !important;
     width: initial !important;
   }
 
@@ -2313,25 +2246,41 @@ article:after {
   }
 
   .table-res td:nth-of-type(1):before {
-    content: "";
+    content: "Benefit";
   }
   .table-res td:nth-of-type(2):before {
-    content: "Name";
+    content: "Effectivity";
   }
   .table-res td:nth-of-type(3):before {
-    content: "Position";
+    content: "Coverage";
   }
   .table-res td:nth-of-type(4):before {
-    content: "Location";
+    content: "Emp. Pays";
   }
   .table-res td:nth-of-type(5):before {
-    content: "Email";
+    content: "Comp. Pays";
   }
   .table-res td:nth-of-type(6):before {
-    content: "Work Phone";
+    content: "Frequency";
   }
-  .table-res td:nth-of-type(7):before {
-    content: "Home Phone";
+
+  .table-res-dependent td:nth-of-type(1):before {
+    content: "Name";
+  }
+  .table-res-dependent td:nth-of-type(2):before {
+    content: "Relationship";
+  }
+  .table-res-dependent td:nth-of-type(3):before {
+    content: "Gender";
+  }
+  .table-res-dependent td:nth-of-type(4):before {
+    content: "SSN";
+  }
+  .table-res-dependent td:nth-of-type(5):before {
+    content: "SIN";
+  }
+  .table-res-dependent td:nth-of-type(6):before {
+    content: "Birth Date";
   }
 }
 
@@ -2410,7 +2359,6 @@ article:after {
 }
 
 .cal-box {
-  /* align-self: flex-start; */
   width: 25%;
   padding: 19px 5px;
 }
