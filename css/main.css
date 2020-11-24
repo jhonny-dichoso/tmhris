@@ -2408,9 +2408,4 @@ article:after {
 
 .calendar-wrapper .calendar-wrap:nth-child(even) {
   background-color: #f8f9fb;
-  margin: 0 20px;
-}
-
-.calendar-wrapper .calendar-wrap:nth-child(odd) {
-  margin: 0 20px;
 }
