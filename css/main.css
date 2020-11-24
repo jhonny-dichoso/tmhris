@@ -1491,7 +1491,7 @@ section {
   margin-bottom: 30px;
 }
 
-@media (max-width: 45em) {
+@media (max-width: 48em) {
   .tabs .tab,
   .tabs label {
     order: initial;
