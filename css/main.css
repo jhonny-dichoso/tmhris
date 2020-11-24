@@ -1995,7 +1995,7 @@ article:after {
   }
 }
 .spin::before {
-  animation: 0.5s linear infinite spinner;
+  animation: 0.7s linear infinite spinner;
   animation-play-state: inherit;
   border: solid 5px #cfd0d1;
   border-bottom-color: #51b6b4;
