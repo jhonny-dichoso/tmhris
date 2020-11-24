@@ -1651,10 +1651,6 @@ section {
   display: inline-block !important;
 }
 
-.show-block {
-  display: block !important;
-}
-
 #login {
   height: 100vh;
   overflow-y: hidden;
@@ -1720,8 +1716,7 @@ section {
 
 .request-form {
   margin: 60px auto;
-  width: 600px;
-  display: none;
+  /* display: none; */
 }
 
 .request-form form {
@@ -1736,38 +1731,8 @@ section {
   cursor: none;
 }
 
-.request-form-wrapper {
-  display: inline-block;
-}
-
-.request-form form div {
-  width: 280px;
-}
-
-.request-form-wrapper a {
-  display: inline-block;
-  width: 280px;
-}
-
-.request-form-wrapper a:first-child {
-  float: left;
-}
-
-.request-form-wrapper a:last-child {
-  float: right;
-}
-
-.request-form form div:nth-child(odd) {
-  float: left;
-}
-
-.request-form form div:nth-child(even) {
-  float: right;
-}
-
-.request-form form div:last-child {
-  float: none;
-  width: 100%;
+.request-form a {
+  display: block;
 }
 
 .space-evenly {
@@ -1871,23 +1836,6 @@ article:after {
 }
 
 @media (max-width: 768px) {
-  .request-form-wrapper a {
-    display: block !important;
-    margin-bottom: 30px !important;
-    width: 100% !important;
-  }
-  .request-form-wrapper div {
-    float: none !important;
-  }
-  .request-form-wrapper {
-    display: block !important;
-  }
-  .request-form form div {
-    width: 100% !important;
-  }
-  .request-form {
-    width: 100% !important;
-  }
   #banner .wrapper {
     height: auto;
   }
@@ -1912,19 +1860,6 @@ article:after {
   .user-dp {
     margin: 0;
   }
-  /* .banner-content .user ul li {
-    height: unset;
-    margin: 0 !important;
-    vertical-align: middle;
-  }
-  .banner-content,
-  .banner-date {
-    text-align: center;
-    display: block;
-  }
-  .banner-wrapper {
-    display: block;
-  } */
 
   .tab-content .card-details {
     display: block;
@@ -1938,11 +1873,6 @@ article:after {
 }
 
 @media (max-width: 429px) {
-  /* .banner-wrapper,
-  .banner-content {
-    display: block;
-    text-align: center;
-  } */
   .user-dp img {
     width: 50px;
     height: 50px;
@@ -2428,7 +2358,6 @@ article:after {
 }
 
 .cal-box {
-  /* align-self: flex-start; */
   width: 25%;
   padding: 19px 5px;
 }

@@ -208,43 +208,59 @@
                       <div id="request-form" class="request-form">
                         <hr />
                         <form action="">
-                          <div class="request-form-wrapper mb--30">
-                            <label for="start-date">Start Date</label>
-                            <input type="date" />
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                              <div class="request-form-wrapper mb--30">
+                                <label for="start-date">Start Date</label>
+                                <input type="date" />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                              <div class="request-form-wrapper mb--30">
+                                <label for="returning-date"
+                                  >Returning Date</label
+                                >
+                                <input type="date" />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                              <div class="request-form-wrapper mb--30">
+                                <label for="start-date">Day(s)</label>
+                                <select name="" id="">
+                                  <option value="-">-</option>
+                                  <option value="Sample">Sample</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                              <div class="request-form-wrapper mb--30">
+                                <label for="returning-date"
+                                  >Type of Leave</label
+                                >
+                                <select name="" id="">
+                                  <option value="-">-</option>
+                                  <option value="Sample">Sample</option>
+                                </select>
+                              </div>
+                            </div>
                           </div>
-                          <div class="request-form-wrapper mb--30">
-                            <label for="returning-date">Returning Date</label>
-                            <input type="date" />
-                          </div>
-                          <div class="request-form-wrapper mb--30">
-                            <label for="start-date">Day(s)</label>
-                            <select name="" id="">
-                              <option value="-">-</option>
-                              <option value="Sample">Sample</option>
-                            </select>
-                          </div>
-                          <div class="request-form-wrapper mb--30">
-                            <label for="returning-date">Type of Leave</label>
-                            <select name="" id="">
-                              <option value="-">-</option>
-                              <option value="Sample">Sample</option>
-                            </select>
-                          </div>
+
                           <label for="description">Description</label>
                           <textarea
-                            class="mb--30"
                             name=""
                             id=""
                             cols="30"
                             rows="10"
                           ></textarea>
-                          <div class="request-form-wrapper mb--30">
-                            <a class="btn--blue bg--green no-mg"
-                              >APPLY TIME OFF</a
-                            >
-                            <a id="btnCancel" class="btn--blue bg--green no-mg"
-                              >CANCEL</a
-                            >
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                              <a class="btn--blue bg--green">APPLY TIME OFF</a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                              <a id="btnCancel" class="btn--blue bg--green"
+                                >CANCEL</a
+                              >
+                            </div>
                           </div>
                         </form>
                       </div>
