@@ -1998,7 +1998,7 @@ article:after {
   animation: 0.5s linear infinite spinner;
   animation-play-state: inherit;
   border: solid 5px #cfd0d1;
-  border-bottom-color: #6a103f;
+  border-bottom-color: #51b6b4;
   border-radius: 50%;
   content: "";
   height: 40px;
