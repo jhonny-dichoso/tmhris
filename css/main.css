@@ -2356,6 +2356,7 @@ article:after {
 
 .month-head {
   margin-left: 20px;
+  margin-top: 20px;
 }
 
 .cal-box {
@@ -2387,14 +2388,6 @@ article:after {
 
 .border-none {
   border: none !important;
-}
-
-.mt--30 {
-  margin-top: 30px;
-}
-
-.mt--20 {
-  margin-top: 20px;
 }
 
 .calendar-wrapper {
