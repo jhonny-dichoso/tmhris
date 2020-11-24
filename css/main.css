@@ -1716,7 +1716,8 @@ section {
 
 .request-form {
   margin: 60px auto;
-  /* display: none; */
+  width: 100%;
+  display: none;
 }
 
 .request-form form {
