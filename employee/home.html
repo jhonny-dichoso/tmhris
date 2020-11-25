@@ -254,7 +254,15 @@
                           ></textarea>
                           <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                              <a class="btn--blue bg--green">APPLY TIME OFF</a>
+                              <a
+                                onclick="myFunction()"
+                                class="btn--blue bg--green"
+                                >APPLY TIME OFF</a
+                              >
+                              <div id="snackbar">
+                                ! Kunwari Success!!!
+                                hahdadhajkdhjkadjkahdkahdhkahd
+                              </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                               <a id="btnCancel" class="btn--blue bg--green"
@@ -496,6 +504,16 @@
       btnCancel.addEventListener("click", () => {
         formRequestForm.classList.remove("show");
       });
+    </script>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function () {
+          x.className = x.className.replace("show", "");
+        }, 3000);
+      }
     </script>
   </body>
 </html>

@@ -261,6 +261,8 @@
               </div>
             </div>
           </div>
+          <button onclick="myFunction()" class="btn--blue">Show Alerts</button>
+          <div id="snackbar">! Kunwari Success!!!</div>
         </div>
       </div>
     </section>
@@ -290,5 +292,14 @@
       <a href="#top"><img src="../img/caret-up-solid.svg" alt="" /></a>
     </div>
     <script src="../js/custom.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function () {
+          x.className = x.className.replace("show", "");
+        }, 3000);
+      }
+    </script>
   </body>
 </html>
