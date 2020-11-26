@@ -2406,6 +2406,7 @@ article:after {
 /* snackbar */
 
 #snackbar {
+  display: none;
   width: 380px;
   transform: translateX(-50%);
   color: #fff;
@@ -2417,26 +2418,25 @@ article:after {
   top: 10px;
   font-size: 17px;
   word-break: break-all;
+  z-index: 2;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
 .success {
   background-color: #63c76a;
-  visibility: hidden;
 }
 
 .warning {
   background-color: #ffdb58;
-  visibility: hidden;
 }
 
 .error {
   background-color: #f45550;
-  visibility: hidden;
 }
 
 .info {
   background-color: #2196f3;
-  visibility: hidden;
 }
 
 #snackbar p {
@@ -2453,8 +2453,6 @@ article:after {
 
 #snackbar.showFade {
   visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
 @-webkit-keyframes fadein {
