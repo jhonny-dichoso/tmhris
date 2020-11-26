@@ -2406,13 +2406,10 @@ article:after {
 /* snackbar */
 
 #snackbar {
-  visibility: hidden;
-  width: 250px;
-  margin-left: -125px;
-  background-color: #63c76a;
+  width: 380px;
+  transform: translateX(-50%);
   color: #fff;
   text-align: center;
-  border-radius: 2px;
   padding: 16px;
   position: fixed;
   z-index: 9999;
@@ -2422,7 +2419,38 @@ article:after {
   word-break: break-all;
 }
 
-#snackbar.show {
+.success {
+  background-color: #63c76a;
+  visibility: hidden;
+}
+
+.warning {
+  background-color: #ffdb58;
+  visibility: hidden;
+}
+
+.error {
+  background-color: #f45550;
+  visibility: hidden;
+}
+
+.info {
+  background-color: #2196f3;
+  visibility: hidden;
+}
+
+#snackbar p {
+  width: 100%;
+}
+#snackbar span {
+  width: 100%;
+}
+#snackbar img {
+  width: 26px;
+  height: 26px;
+}
+
+#snackbar.showFade {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;

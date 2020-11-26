@@ -262,7 +262,26 @@
             </div>
           </div>
           <button id="btnTrigger" class="btn--blue">Show Alerts</button>
-          <div id="snackbar">! Kunwari Success!!!</div>
+          <!-- <div id="snackbar" class="flex success">
+            <img src="../img/check-solid.svg" alt="" />
+            <span>SUCCESS!</span>
+            <span>All changes saved!</span>
+          </div> -->
+          <!-- <div id="snackbar" class="flex warning">
+            <img src="../img/exclamation-triangle-solid-white.svg" alt="" />
+            <span>WARNING!</span>
+            <span>All changes saved!</span>
+          </div> -->
+          <!-- <div id="snackbar" class="flex error">
+            <img src="../img/exclamation-solid-white.svg" alt="" />
+            <span> ERROR!</span>
+            <span>All changes saved!</span>
+          </div> -->
+          <div id="snackbar" class="flex info">
+            <img src="../img/exclamation-solid-white.svg" alt="" />
+            <span>TIPS!</span>
+            <span>All changes saved!</span>
+          </div>
         </div>
       </div>
     </section>
@@ -297,9 +316,9 @@
         snackbar = document.querySelector("#snackbar");
 
       btnTrigger.addEventListener("click", () => {
-        snackbar.className = "show";
+        snackbar.classList.add("showFade");
         setTimeout(() => {
-          snackbar.className = snackbar.className.replace("show", "");
+          snackbar.className = snackbar.className.replace("showFade", "");
         }, 3000);
       });
     </script>
