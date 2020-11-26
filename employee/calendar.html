@@ -261,7 +261,7 @@
               </div>
             </div>
           </div>
-          <button onclick="myFunction()" class="btn--blue">Show Alerts</button>
+          <button id="btnTrigger" class="btn--blue">Show Alerts</button>
           <div id="snackbar">! Kunwari Success!!!</div>
         </div>
       </div>
@@ -293,13 +293,15 @@
     </div>
     <script src="../js/custom.js"></script>
     <script>
-      function myFunction() {
-        var x = document.getElementById("snackbar");
-        x.className = "show";
-        setTimeout(function () {
-          x.className = x.className.replace("show", "");
+      const btnTrigger = document.querySelector("#btnTrigger"),
+        snackbar = document.querySelector("#snackbar");
+
+      btnTrigger.addEventListener("click", () => {
+        snackbar.className = "show";
+        setTimeout(() => {
+          snackbar.className = snackbar.className.replace("show", "");
         }, 3000);
-      }
+      });
     </script>
   </body>
 </html>
