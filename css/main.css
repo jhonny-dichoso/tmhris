@@ -1235,6 +1235,18 @@ header nav ul li a:hover {
 
 .user-dp {
   margin: 5px;
+  position: relative;
+}
+
+.user-dp span {
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: -15px;
+  top: 25px;
 }
 
 .user-dp img {
