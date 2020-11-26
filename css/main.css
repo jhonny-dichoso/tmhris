@@ -2443,11 +2443,12 @@ article:after {
   width: 100%;
 }
 #snackbar span {
-  width: 100%;
+  margin-right: 20px !important;
 }
 #snackbar img {
   width: 26px;
   height: 26px;
+  margin-right: 10px;
 }
 
 #snackbar.showFade {
